@@ -8,7 +8,7 @@ export default function Home() {
       <Navbar />
       <div class="flexCon">
         <div>
-          <h1>Hello</h1>
+          <h2>Hello</h2>
           <p>practice</p>
         </div>
         <div>Image</div>
