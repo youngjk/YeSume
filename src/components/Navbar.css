@@ -1,0 +1,21 @@
+nav {
+  background-color: orange;
+  margin: 10px;
+}
+
+li {
+  display: inline-block;
+  padding: 14px 30px;
+}
+
+li a {
+  color: purple;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px;
+}
+
+li a:hover{
+  color:white;
+  background-color: purple;
+}
