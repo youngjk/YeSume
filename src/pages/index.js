@@ -9,9 +9,16 @@ export default function Home() {
       <div class="flexCon">
         <div>
           <h2>Hello</h2>
-          <p>practice</p>
+          <p>practice: some text here</p>
         </div>
         <div>Image</div>
+      </div>
+      <div class="flexCon">
+        <div>Image2</div>
+        <div>
+          <h2>Career</h2>
+          <p>practice: some text here</p>
+        </div>
       </div>
     </div>
   )
