@@ -1,7 +1,34 @@
+@import url(//db.onlinewebfonts.com/c/1231ae63051a492545b18104b75ebf51?family=Uber+Move+Text);
+
+*{
+  font-family: "Uber Move Text";
+  font-size: 12px;
+  margin: 5px;
+}
+
 .flexCon {
   display: flex;
-  background-color: orange;
   height: 500px;
+}
+
+.flexCon2{
+  display: flex;
+  justify-content: flex-end;
+  height: 500px;
+  margin: 15px;
+  background-image: url("../images/career_background.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.TextBox{
+  margin: 100px 20px 100px 20px;
+}
+
+.Main_Image1 {
+  background-image: url("../images/main_background.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .flexCon > div {
@@ -10,7 +37,16 @@
   padding: 10px;
   width: 50%;
   justify-content: center;
-  border: 3px solid purple;
+}
+
+.flexCon2 > div {
+  width: 50%;
+  margin: 120px 30px 180px 30px;
+  padding-top: 10px;
+  background: white;
+  border-radius: 25px;
+  box-shadow: 3px 4px 5px #888888;
+  text-align: center;
 }
 
 h1 {
@@ -18,5 +54,21 @@ h1 {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 45px;
+  color:#5B35F5;
 }
+
+p{
+  padding: 5px;
+  word-spacing: 3px;
+}
+
+#Colored_p{
+  color: #DE86B8;
+}
+
+span{
+  font-size: 22px;
+  color:#3E36D3;
+}
+
