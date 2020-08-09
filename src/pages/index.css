@@ -6,9 +6,12 @@
   margin: 5px;
 }
 
+.MainCon{
+  height: auto;
+}
+
 .flexCon {
   display: flex;
-  height: auto;
 }
 
 .flexCon > div {
@@ -17,18 +20,17 @@
   padding: 10px;
   width: 50%;
   justify-content: center;
-  height: auto;
   padding-bottom: 20%;
 }
 
-.Main_Image1 {
+.main_Image1 {
   background-image: url("../images/main_background.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
 }
 
-.TextBox{
-  margin: 35% 20% 0% 20%;
+.textBox{
+  margin: 15% 0% 0% 2%;
   padding: 10px;
 }
 
@@ -37,46 +39,42 @@
   display: flex;
   justify-content: flex-end;
   height: auto;
-  padding-bottom: 80%;
-  margin: 15px;
+  padding-bottom: 20%;
+  margin: 10px;
   background-image: url("../images/career_background.jpg");
   background-size: 100%;
+  background-position: center;
   background-repeat: no-repeat;
-
 }
 
 .flexCon2 > div {
-  position: absolute;
+  position: relative;
   width: 50%;
-  margin: 20% 2% 30% 0%;
-  
-  padding: 15px 0px 15px 0px;
+  margin: 30% 1% 0% 0%;
+  padding: 10px 0px 15px 0px;
   background: white;
   border-radius: 25px;
   box-shadow: 3px 4px 5px #888888;
   text-align: center;
 }
 
-h1 {
-  text-align: center;
-}
-
 h2 {
-  font-size: 45px;
+  font-size: 6vw;
   color:#5B35F5;
 }
 
 p{
-  padding: 5px;
+  font-size: 1.2vw;
+  line-height: 1.5;
   word-spacing: 3px;
 }
 
-#Colored_p{
+#colored_p{
   color: #DE86B8;
 }
 
 span{
-  font-size: 22px;
+  font-size: 1.5vw;
   color:#3E36D3;
 }
 
