@@ -1,0 +1,59 @@
+@import url(//db.onlinewebfonts.com/c/1231ae63051a492545b18104b75ebf51?family=Uber+Move+Text);
+
+form{
+  padding: 2vw;
+  font-size: 1.2vw;
+  padding-left: 5vw;
+  margin-top: -2.5vw;
+}
+
+form > input, select, textarea{
+  border: none;
+  padding: 5px;
+  border-radius: 2vw;
+  box-shadow: 3px 4px 5px #888888;
+  font-size: 1.2vw;
+}
+
+label {
+  padding-left: 2%;
+  color: #5B35F5;
+}
+
+#first_name, #last_name {
+  width: 10vw;
+  height: 1vw;
+}
+
+#email {
+  width: 28vw;
+  height: 1vw;
+}
+
+textarea {
+  width: 30vw;
+  height: 10vw;
+}
+
+select {
+  width: 30vw;
+}
+
+#mock {
+  color:#5B35F5;
+}
+
+input[type=submit]{
+  width: 10vw;
+  background-color: #5B35F5 ;
+  color: white;
+  border-radius: 3vw;
+  border: none;
+  padding: 6px;
+  margin-right: 11vw;
+  float: right;
+}
+
+::placeholder{
+ padding-left: 1vw;
+}
