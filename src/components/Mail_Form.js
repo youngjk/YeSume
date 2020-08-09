@@ -7,16 +7,16 @@ export const Mail_Form = () => {
       {/* Name */}
       <label for="first_name">Name</label>
       <br></br>
-      <input type="text" id="first_name" name="first_name"
+      <input type="text" id="first_name" name="First Name"
         placeholder="First Name"></input>
-      <input type="text" id="last_name" name="last_name"
+      <input type="text" id="last_name" name="Last Name"
         placeholder="Last Name"></input>
       <br></br>
 
       {/* Email */}
       <label for="email">E-Mail</label>
       <br></br>
-      <input type="text" id="email" name="mail"
+      <input type="text" id="email" name="E-mail"
         placeholder="example@e-mail.com"></input>
       <br></br>
 

@@ -100,19 +100,19 @@ span{
 
 .background_effect2{
   background-image: url("../images/background_effect2.png");
-  background-size: 125%;
+  background-size: 120% 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .mail_icon{
   background-image: url("../images/mail_icon.png");
-  background-size: 80%;
+  background-size: 58%;
   background-repeat: no-repeat;
   background-position: center;
   height: 10vw;
   width: 20vw;
-  margin-left: 12vw;
+  margin-left: 8vw;
   margin-top: 1.5vw;
 }
 
