@@ -33,6 +33,7 @@ label {
 textarea {
   width: 30vw;
   height: 10vw;
+  resize: unset;
 }
 
 select {

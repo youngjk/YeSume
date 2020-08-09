@@ -41,7 +41,7 @@ span{
 /* 1st Container Style Code Starts*/
 .flexCon {
   display: flex;
-  height: 50vw;
+  height: 60vw;
 }
 
 .hello_image {
@@ -113,7 +113,7 @@ span{
   height: 10vw;
   width: 20vw;
   margin-left: 8vw;
-  margin-top: 1.5vw;
+  margin-top: 10vw;
 }
 
 .social_image {
@@ -123,3 +123,14 @@ span{
   background-repeat: no-repeat;
 }
 
+@media only screen and (max-width:440px){
+  .mail_icon{
+    margin-top: 5vw;
+  }
+}
+
+@media only screen and (max-width:335px){
+  .mail_icon{
+    margin-top: 1vw;
+  }
+}
