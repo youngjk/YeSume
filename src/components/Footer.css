@@ -1,0 +1,9 @@
+.footer_background{
+  background-color: #5B35F5;
+  height: 100%;
+  padding: 1vw 10vw;
+}
+
+#footer{
+  border-bottom: 1px solid white;
+}
