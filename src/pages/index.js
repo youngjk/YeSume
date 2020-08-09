@@ -6,8 +6,10 @@ export default function Home() {
   return (
     <div class="mainCon">
 
+      {/* Sticky Nav Bar */}
       <Navbar />
 
+      {/* Biography */}
       <div class="flexCon">
         <div>
           <div class="textBox">
@@ -16,6 +18,7 @@ export default function Home() {
               My name is <span>Young Jin Kim</span>
             </p>
             <p>
+              {/* Random Text*/}
               Back-end developer based in Toronto,
               Canada. There are several tools and platforms (wordpress, magento etc..)
               available that can be used to develop the front end of a website,
@@ -25,14 +28,15 @@ export default function Home() {
             </p>
           </div>
         </div>
-
+        {/* Main Image 1*/}
         <div class="main_Image1"></div>
+      </div> {/* End of Biography Container*/}
 
-      </div>
-
+      {/* Career Container*/}
       <div class="flexCon2">
         <div>
           <h2>Career</h2>
+          {/* random Text */}
           <p id="colored_p">
             Backend developer focuses on databases, scripting,
             and the architecture of websites.
@@ -54,9 +58,9 @@ export default function Home() {
             handling elements such as video and audio files.
             </p>
         </div>
+      </div> {/* End of Career Container*/}
 
-      </div>
-
+      {/* Mock Container */}
       <div class="flexCon">
 
         <div>Image3</div>
@@ -65,6 +69,7 @@ export default function Home() {
 
       </div>
 
+      {/* Mock Footer */}
       <Footer />
     </div>
   )

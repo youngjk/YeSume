@@ -1,5 +1,7 @@
 @import url(//db.onlinewebfonts.com/c/1231ae63051a492545b18104b75ebf51?family=Uber+Move+Text);
 
+
+/*Element Style Code*/
 *{
   font-family: "Uber Move Text";
   font-size: 12px;
@@ -10,6 +12,28 @@
   height: auto;
 }
 
+h2 {
+  font-size: 6vw;
+  color:#5B35F5;
+}
+
+p{
+  font-size: 1.2vw;
+  line-height: 1.5;
+  word-spacing: 3px;
+}
+
+#colored_p{
+  color: #DE86B8;
+}
+
+span{
+  font-size: 1.5vw;
+  color:#3E36D3;
+}
+/*End of Element Style Code*/
+
+/* 1st Container Style Code Starts*/
 .flexCon {
   display: flex;
 }
@@ -33,8 +57,9 @@
   margin: 15% 0% 0% 2%;
   padding: 10px;
 }
+/* End of 1st Container Style Code*/
 
-
+/* 2nd Container Style Code */
 .flexCon2{
   display: flex;
   justify-content: flex-end;
@@ -57,24 +82,5 @@
   box-shadow: 3px 4px 5px #888888;
   text-align: center;
 }
-
-h2 {
-  font-size: 6vw;
-  color:#5B35F5;
-}
-
-p{
-  font-size: 1.2vw;
-  line-height: 1.5;
-  word-spacing: 3px;
-}
-
-#colored_p{
-  color: #DE86B8;
-}
-
-span{
-  font-size: 1.5vw;
-  color:#3E36D3;
-}
+/*End of 2nd Container Style Code */
 
