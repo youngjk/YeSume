@@ -11,6 +11,7 @@ form > input, select, textarea{
   border: none;
   padding: 5px;
   border-radius: 2vw;
+  margin-bottom: 0.5vw;
   box-shadow: 3px 4px 5px #888888;
   font-size: 1.2vw;
 }
@@ -21,7 +22,7 @@ label {
 }
 
 #first_name, #last_name {
-  width: 10vw;
+  width: 13vw;
   height: 1vw;
 }
 
