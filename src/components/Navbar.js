@@ -2,11 +2,8 @@ import React from 'react'
 import { Link } from 'gatsby'
 import './Navbar_style.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faLinkedinIn,
-  faFacebookF,
-  faInstagram
-} from "@fortawesome/free-brands-svg-icons";
+import { faLinkedinIn, faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
+
 export const Navbar = () => {
   return (
     <nav>
