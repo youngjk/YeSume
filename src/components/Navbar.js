@@ -10,7 +10,8 @@ import {
 export const Navbar = () => {
   return (
     <nav>
-
+      <img class="mock-logo" src={"../../images/mock-logo.png"}
+        alt="mock-logo"></img>
       <div class="textNav">
         <ul>
           <li>

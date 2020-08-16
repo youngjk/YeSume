@@ -3,17 +3,28 @@
   padding: 0px;
 }
 
+.mock-logo {
+  width: 2vw;
+  height: 3vh;
+}
+
 nav {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 2vw;
-  background-color: tan;
   padding: 0.5vh 15%;
+  border: 1px solid violet;
 }
 
 li {
   display: inline;
+}
+
+li a {
+  text-decoration: none;
+  color: #2B0050;
+  font-size: 1.4vw;
 }
 
 .textNav li {
@@ -21,13 +32,9 @@ li {
   float: left;
 }
 
-.textNav li a {
-  text-decoration: none;
-  color:#2B0050;
-  margin-right: 7vw;
-  font-size: 1.2vw;
+.textNav li a{
+  padding:0vw 4vw;
 }
-
 .socialNav {
   flex-grow: 2;
 }
