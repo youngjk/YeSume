@@ -1,28 +1,43 @@
+*{
+  margin:0px;
+  padding: 0px;
+}
+
 nav {
   display: flex;
-  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 2vw;
   background-color: tan;
-}
-
-.textNav {
-  width: 70%;
-}
-
-.socialNav {
-  width: 30%
+  padding: 0.5vh 15%;
 }
 
 li {
   display: inline;
 }
 
-.socialNav li {
-  float: right;
+.textNav li {
   padding: 0vw 0.7vw;
+  float: left;
 }
 
 .textNav li a {
   text-decoration: none;
-  color: black;
-  padding: 0vw 4vw;
+  color:#2B0050;
+  margin-right: 7vw;
+  font-size: 1.2vw;
 }
+
+.socialNav {
+  flex-grow: 2;
+}
+
+.socialNav li {
+  float: right;
+  padding: 0vw 1vw;
+}
+
+.socialNav li img {
+  height: 1.3vw;
+}
+
