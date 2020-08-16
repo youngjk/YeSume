@@ -1,7 +1,12 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import './Navbar_style.css'
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faLinkedinIn,
+  faFacebookF,
+  faInstagram
+} from "@fortawesome/free-brands-svg-icons";
 export const Navbar = () => {
   return (
     <nav>
@@ -11,9 +16,11 @@ export const Navbar = () => {
           <li>
             <Link to="/">Home</Link>
           </li>
+
           <li>
             <Link to="/career">Career</Link>
           </li>
+
           <li>
             <Link to="/investment">Investment</Link>
           </li>
@@ -24,20 +31,19 @@ export const Navbar = () => {
         <ul>
           <li>
             <Link to="https://www.facebook.com">
-              <img src={'../../images/icon_facebook.png'}
-                alt="facebook icon"></img>
+              <FontAwesomeIcon icon={faFacebookF} />
             </Link>
           </li>
+
           <li>
-            <Link to="https://www.instagram.com">
-              <img src={'../../images/icon_instagram.png'}
-                alt="instagram icon"></img>
+            <Link to="https://www.Instagram.com">
+              <FontAwesomeIcon icon={faInstagram} />
             </Link>
           </li>
+
           <li>
-            <Link to="https://www.linkedin.com">
-              <img src={'../../images/icon_linkedin.png'}
-                alt="linkedin icon"></img>
+            <Link to="https://www.LinkedIn.com">
+              <FontAwesomeIcon icon={faLinkedinIn} />
             </Link>
           </li>
         </ul>
