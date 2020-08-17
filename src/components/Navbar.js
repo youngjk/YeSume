@@ -28,12 +28,6 @@ export const Navbar = () => {
       <div class="socialNav">
         <ul>
           <li>
-            <Link to="https://www.facebook.com">
-              <FontAwesomeIcon icon={faFacebookF} />
-            </Link>
-          </li>
-
-          <li>
             <Link to="https://www.Instagram.com">
               <FontAwesomeIcon icon={faInstagram} />
             </Link>
@@ -42,6 +36,12 @@ export const Navbar = () => {
           <li>
             <Link to="https://www.LinkedIn.com">
               <FontAwesomeIcon icon={faLinkedinIn} />
+            </Link>
+          </li>
+
+          <li>
+            <Link to="https://www.facebook.com">
+              <FontAwesomeIcon icon={faFacebookF} />
             </Link>
           </li>
         </ul>

@@ -14,7 +14,6 @@ nav {
   align-items: center;
   height: 2vw;
   padding: 0.5vh 15%;
-  border: 1px solid violet;
 }
 
 li {
@@ -24,7 +23,8 @@ li {
 li a {
   text-decoration: none;
   color: #2B0050;
-  font-size: 1.4vw;
+  font-size: 1.1vw;
+  letter-spacing: 3px;
 }
 
 .textNav li {
@@ -33,8 +33,9 @@ li a {
 }
 
 .textNav li a{
-  padding:0vw 4vw;
+  padding:0vw 3.5vw;
 }
+
 .socialNav {
   flex-grow: 2;
 }
@@ -43,8 +44,3 @@ li a {
   float: right;
   padding: 0vw 1vw;
 }
-
-.socialNav li img {
-  height: 1.3vw;
-}
-
