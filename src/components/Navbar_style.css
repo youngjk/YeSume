@@ -16,11 +16,11 @@ nav {
   padding: 0.5vh 15%;
 }
 
-li {
+nav li {
   display: inline;
 }
 
-li a {
+nav li a {
   text-decoration: none;
   color: #2B0050;
   font-size: 1.1vw;
