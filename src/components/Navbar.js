@@ -1,14 +1,21 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import './Navbar_style.css'
+
+// import Font Awesome social media icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn, faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
+
+//import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 export const Navbar = () => {
   return (
     <nav>
+
+      {/* Mock-up logo */}
       <img class="mock-logo" src={"../../images/mock-logo.png"}
         alt="mock-logo"></img>
+
       <div class="textNav">
         <ul>
           <li>
@@ -46,7 +53,6 @@ export const Navbar = () => {
           </li>
         </ul>
       </div>
-
-    </nav>
+    </nav >
   )
 }

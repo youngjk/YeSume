@@ -8,6 +8,7 @@
   height: 2vh;
 }
 
+/* Nav style code */
 nav {
   display: flex;
   justify-content: center;
@@ -27,6 +28,7 @@ nav li a {
   letter-spacing: 3px;
 }
 
+/* text Nav style code */
 .textNav li {
   padding: 0vw 0.7vw;
   float: left;
@@ -36,6 +38,7 @@ nav li a {
   padding:0vw 3.5vw;
 }
 
+/* social Nav style code */
 .socialNav {
   flex-grow: 2;
 }
