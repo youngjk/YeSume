@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn, faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 //import { faBars } from "@fortawesome/free-solid-svg-icons";
+// reuse line:10 when build the mobile-menu
 
 export const Navbar = () => {
   return (
