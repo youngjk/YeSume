@@ -6,7 +6,6 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-      <h1>MAIN PAGE</h1>
     </div>
   )
 }
