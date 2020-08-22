@@ -36,13 +36,13 @@ export const Navbar = () => {
       <div class="socialNav">
         <ul>
           <li>
-            <Link to="https://www.Instagram.com">
+            <Link to="https://www.instagram.com">
               <FontAwesomeIcon icon={faInstagram} />
             </Link>
           </li>
 
           <li>
-            <Link to="https://www.LinkedIn.com">
+            <Link to="https://www.linkedin.com">
               <FontAwesomeIcon icon={faLinkedinIn} />
             </Link>
           </li>
