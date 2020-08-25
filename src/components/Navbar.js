@@ -5,9 +5,8 @@ import './Navbar_style.css'
 // import Font Awesome social media icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn, faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
-//import { faBars } from "@fortawesome/free-solid-svg-icons";
-// reuse line:10 when build the mobile-menu
 
 export const Navbar = () => {
   return (
@@ -17,7 +16,21 @@ export const Navbar = () => {
       <img class="mock-logo" src={"../../images/mock-logo.png"}
         alt="mock-logo"></img>
 
-      <div class="textNav">
+      <button class="navbar-toggle" id="mobile-navbar-toggle" onClick={function (e) {
+
+        // Prevent refreshing
+        e.preventDefault();
+
+        let mainNav = document.getElementById('textNav');
+
+        // re-write 'textNav' class to 'textNav active' on click
+        mainNav.classList.toggle('active');
+
+      }}>
+        <FontAwesomeIcon icon={faBars} />
+      </button>
+
+      <div class="textNav" id="textNav">
         <ul>
           <li>
             <Link to="/">Home</Link>
@@ -36,8 +49,8 @@ export const Navbar = () => {
       <div class="socialNav">
         <ul>
           <li>
-            <Link to="https://www.instagram.com">
-              <FontAwesomeIcon icon={faInstagram} />
+            <Link to="https://www.facebook.com" class='icon-facebook'>
+              <FontAwesomeIcon icon={faFacebookF} />
             </Link>
           </li>
 
@@ -48,8 +61,8 @@ export const Navbar = () => {
           </li>
 
           <li>
-            <Link to="https://www.facebook.com">
-              <FontAwesomeIcon icon={faFacebookF} />
+            <Link to="https://www.instagram.com">
+              <FontAwesomeIcon icon={faInstagram} />
             </Link>
           </li>
         </ul>

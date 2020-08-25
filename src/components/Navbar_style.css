@@ -3,49 +3,135 @@
   padding: 0;
 }
 
+/* Small devices style code 
+portrait tablets and large phones, 767px and down) */
+
 .mock-logo {
-  width: 2vw;
-  height: 2vh;
-}
-
-/* Nav style code */
-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 2vw;
-  padding: 0.5vh 15%;
-}
-
-nav li {
-  display: inline;
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  top: 10px;
+  /* center the logo */
+  left: 47%;
 }
 
 nav li a {
   text-decoration: none;
   color: #2B0050;
-  font-size: 1.1vw;
   letter-spacing: 3px;
 }
 
-/* text Nav style code */
-.textNav li {
-  padding: 0vw 0.7vw;
-  float: left;
+/* mobile nav toggle style code */
+nav button {
+  color: #2B0050;
+  border: none;
+  background: none;
+  position: absolute;
+  top:10px;
+  left:20px;
 }
 
-.textNav li a{
-  padding:0vw 3.5vw;
+/* disable textNav on default*/
+.textNav {
+  display: none;
 }
 
-/* social Nav style code */
+/* abling textNav when the toggle is onclick*/
+.active {
+  display: block;
+}
+
+.textNav li:first-child {
+  margin-top:30px;
+}
+
+.textNav.active li {
+  text-align: center;
+  padding: 3px;
+}
+
 .socialNav {
-  flex-grow: 2;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  position: absolute;
+  top:10px;
+  right:20px;
 }
 
 .socialNav li {
-  padding: 0vw 1vw;
+  display: inline;
+  padding: 0 2vw;
+}
+
+.socialNav li:last-child {
+  padding-right: 0;
+}
+
+.socialNav li a {
+  font-size: 15px;
+}
+
+/* Medium devices to Large devices (landscape tablets to desktops, 768px and up) */
+@media only screen and (min-width: 768px){
+  .mock-logo {
+    top:0;
+    left: 0;
+    position: relative;
+    width: 2vw;
+    height: 2vh;
+  }
+
+  /* Nav style code */
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2vw;
+    padding: 0.5vh 15%;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  nav li {
+    display: inline;
+  }
+
+  nav li a {
+    font-size: 1.1vw;
+  }
+
+  /* text Nav style code */
+  .textNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .textNav li {
+    padding: 0vw 0.7vw;
+  }
+
+  .textNav li a{
+    padding:0vw 3.5vw;
+  }
+
+  /* social Nav style code */
+  .socialNav {
+    top: 0;
+    right: 0;
+    position: relative;
+    flex-grow: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .socialNav li {
+    padding: 0vw 1vw;
+  }
+
+  .socialNav li a {
+    font-size: 1.1vw;
+    padding:0;
+  }
 }
