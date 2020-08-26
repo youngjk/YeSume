@@ -75,8 +75,8 @@ nav button {
     top:0;
     left: 0;
     position: relative;
-    width: 2vw;
-    height: 2vh;
+    width: 20px;
+    height: 30px;
   }
 
   /* Nav style code */
@@ -84,7 +84,7 @@ nav button {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 2vw;
+    height: 50px;
     padding: 0.5vh 15%;
   }
 
@@ -97,7 +97,7 @@ nav button {
   }
 
   nav li a {
-    font-size: 1.1vw;
+    font-size: 16px;
   }
 
   /* text Nav style code */
@@ -131,7 +131,7 @@ nav button {
   }
 
   .socialNav li a {
-    font-size: 1.1vw;
+    font-size: 16px;
     padding:0;
   }
 }
