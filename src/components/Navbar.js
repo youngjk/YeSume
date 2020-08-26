@@ -26,6 +26,10 @@ export const Navbar = () => {
         // re-write 'textNav' class to 'textNav active' on click
         mainNav.classList.toggle('active');
 
+        // add class name 'fade-in' after 150 ms
+        setTimeout(() => {
+          mainNav.classList.toggle('fade-in')
+        }, 150);
       }}>
         <FontAwesomeIcon icon={faBars} />
       </button>
