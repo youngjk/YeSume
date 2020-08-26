@@ -7,12 +7,16 @@
 portrait tablets and large phones, 767px and down) */
 
 .mock-logo {
-  position: absolute;
+  /* center the logo */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 30px;
   height: 20px;
-  top: 10px;
-  /* center the logo */
-  left: 47%;
+}
+
+nav{
+  padding: 10px 0;
 }
 
 nav li a {
@@ -23,12 +27,12 @@ nav li a {
 
 /* mobile nav toggle style code */
 nav button {
+  position: absolute;
+  top: 10px;
+  left: 20px;
   color: #2B0050;
   border: none;
   background: none;
-  position: absolute;
-  top:10px;
-  left:20px;
 }
 
 /* disable textNav on default*/
@@ -37,12 +41,16 @@ nav button {
 }
 
 /* abling textNav when the toggle is onclick*/
-.active {
+.textNav.active{
   display: block;
+  /* animation starts*/
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
 }
 
-.textNav li:first-child {
-  margin-top:30px;
+.textNav.active.fade-in{
+  opacity: 1;
+  /* animation ends */
 }
 
 .textNav.active li {
@@ -52,8 +60,8 @@ nav button {
 
 .socialNav {
   position: absolute;
-  top:10px;
-  right:20px;
+  top: 10px;
+  right: 20px;
 }
 
 .socialNav li {
@@ -75,8 +83,6 @@ nav button {
     top:0;
     left: 0;
     position: relative;
-    width: 20px;
-    height: 30px;
   }
 
   /* Nav style code */
