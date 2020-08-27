@@ -7,31 +7,27 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn, faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
-
 export const Navbar = () => {
+
+  const ToggleHandler = (e) => {
+    // prevent refreshing
+    e.preventDefault();
+    let mainNav = document.getElementById("textNav")
+    // re-write 'textNav' class to 'textNav active' on click
+    mainNav.classList.toggle('active');
+    // add class name 'fade-in' after 150 ms to add animation
+    setTimeout(() => {
+      mainNav.classList.toggle('fade-in');
+    }, 150);
+  }
+
   return (
     <nav>
-
       {/* Mock-up logo */}
       <img class="mock-logo" src={"../../images/mock-logo.png"}
         alt="mock-logo"></img>
 
-      <button class="navbar-toggle" id="mobile-navbar-toggle" onClick={function (e) {
-
-        // Prevent refreshing
-        e.preventDefault();
-
-        let mainNav = document.getElementById('textNav');
-
-        // re-write 'textNav' class to 'textNav active' on click
-        mainNav.classList.toggle('active');
-
-        // add class name 'fade-in' after 150 ms to add animation
-        setTimeout(() => {
-          mainNav.classList.toggle('fade-in')
-        }, 150);
-
-      }}>
+      <button class="navbar-toggle" id="mobile-navbar-toggle" onClick={ToggleHandler}>
         <FontAwesomeIcon icon={faBars} />
       </button>
 
@@ -40,11 +36,9 @@ export const Navbar = () => {
           <li>
             <Link to="/">Home</Link>
           </li>
-
           <li>
             <Link to="/career">Career</Link>
           </li>
-
           <li>
             <Link to="/investment">Investment</Link>
           </li>
@@ -54,17 +48,15 @@ export const Navbar = () => {
       <div class="socialNav">
         <ul>
           <li>
-            <Link to="https://www.facebook.com" class='icon-facebook'>
+            <Link to="https://www.facebook.com">
               <FontAwesomeIcon icon={faFacebookF} />
             </Link>
           </li>
-
           <li>
             <Link to="https://www.linkedin.com">
               <FontAwesomeIcon icon={faLinkedinIn} />
             </Link>
           </li>
-
           <li>
             <Link to="https://www.instagram.com">
               <FontAwesomeIcon icon={faInstagram} />
