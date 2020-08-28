@@ -12,7 +12,7 @@ export const Navbar = () => {
   const ToggleHandler = (e) => {
     // prevent refreshing
     e.preventDefault();
-    let mainNav = document.getElementById("textNav")
+    let mainNav = document.getElementById("textNav");
     // re-write 'textNav' class to 'textNav active' on click
     mainNav.classList.toggle('active');
     // add class name 'fade-in' after 150 ms to add animation
