@@ -14,7 +14,7 @@ export const Navbar = () => {
   const ToggleHandler = (e) => {
     // prevent refreshing
     e.preventDefault();
-    // try react.findDOMNode
+    // Access to DOM Node
     let mainNav = textNav.current;
     // re-write 'textNav' class to 'textNav active' on click
     mainNav.classList.toggle('active');
