@@ -9,10 +9,13 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 export const Navbar = () => {
 
+  const textNav = React.createRef();
+
   const ToggleHandler = (e) => {
     // prevent refreshing
     e.preventDefault();
-    let mainNav = document.getElementById("textNav");
+    // try react.findDOMNode
+    let mainNav = textNav.current;
     // re-write 'textNav' class to 'textNav active' on click
     mainNav.classList.toggle('active');
     // add class name 'fade-in' after 150 ms to add animation
@@ -31,7 +34,7 @@ export const Navbar = () => {
         <FontAwesomeIcon icon={faBars} />
       </button>
 
-      <div class="textNav" id="textNav">
+      <div class="textNav" ref={textNav}>
         <ul>
           <li>
             <Link to="/">Home</Link>
