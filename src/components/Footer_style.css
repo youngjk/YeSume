@@ -1,0 +1,86 @@
+/* Medium devices to Large devices 
+(landscape tablets to desktops, 768px and up) */
+
+footer {
+  display:flex;
+  justify-content: center;
+  background-color: #2B0050;
+  padding: 30px 15%;
+}
+
+/* footer font style code */
+footer h3, footer a, footer span {
+  color: white;
+}
+
+footer h3 {
+  font-size: 24px;
+}
+
+/* footer container style code */
+footer div {
+  display: flex;
+  flex-direction: column;
+  padding: 0 3.5vw;
+  width: 30%;
+}
+
+footer div:nth-child(2), footer div:nth-child(3) {
+  padding-right: 0;
+}
+
+.footer_connect {
+  order: 4;
+}
+
+/* footer list style code */
+footer ul {
+  list-style: none;
+}
+
+footer ul li{
+  padding: 10px 0;
+}
+
+footer ul li a, footer span {
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer_connect li span {
+  float: right;
+  margin-top:6px;
+}
+
+/* Small devices style code 
+portrait tablets and large phones, 767px and down) */
+@media only screen and (max-width: 767px){
+  footer .mock-logo {
+    display: none;
+  }
+
+  footer {
+    justify-content: unset;
+    flex-wrap: wrap;
+    padding: 10px 15px;
+  }
+  
+  footer div {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px 0;
+  }
+
+  .footer_connect{
+    order: unset;
+  }
+  
+  .footer_email{
+    font-size: 10px;    
+  }
+
+  footer div:last-child, footer div:nth-child(2){
+    padding-right: 15px;
+  }
+}
+  
