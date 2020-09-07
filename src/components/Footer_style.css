@@ -5,7 +5,7 @@ footer {
   display:flex;
   justify-content: center;
   background-color: #2B0050;
-  padding: 30px 15%;
+  padding: 30px 100px;
 }
 
 /* footer font style code */
@@ -49,7 +49,7 @@ footer ul li a, footer span {
 
 .footer_connect li span {
   float: right;
-  margin-top:6px;
+  margin-top: 6px;
 }
 
 /* Small devices style code 
@@ -83,4 +83,4 @@ portrait tablets and large phones, 767px and down) */
     padding-right: 15px;
   }
 }
-  
+
