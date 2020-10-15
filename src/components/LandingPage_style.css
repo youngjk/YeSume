@@ -1,0 +1,38 @@
+.Landing_Main {
+  display: flex;
+  flex-direction: row;
+  background-color: #0A0068;
+  padding: 10px 100px;
+}
+
+.Main_Heading {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  width: 60%;
+}
+
+.Main_ImgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Landing_Main h1 {
+  font-size: 120px;
+}
+
+.Landing_Main h2 {
+  color: #DD78A4;
+  font-size: 45px;
+}
+
+.Landing_Main h3 {
+  font-size: 25px;
+}
+
+.Landing_Main h1,
+.Landing_Main h3 {
+  color: white;
+}
