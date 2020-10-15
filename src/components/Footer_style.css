@@ -2,14 +2,16 @@
 (landscape tablets to desktops, 768px and up) */
 
 footer {
-  display:flex;
+  display: flex;
   justify-content: center;
-  background-color: #2B0050;
+  background-color: #0A0068;
   padding: 30px 100px;
 }
 
 /* footer font style code */
-footer h3, footer a, footer span {
+footer h3,
+footer a,
+footer span {
   color: white;
 }
 
@@ -25,7 +27,8 @@ footer div {
   width: 30%;
 }
 
-footer div:nth-child(2), footer div:nth-child(3) {
+footer div:nth-child(2),
+footer div:nth-child(3) {
   padding-right: 0;
 }
 
@@ -38,11 +41,12 @@ footer ul {
   list-style: none;
 }
 
-footer ul li{
+footer ul li {
   padding: 10px 0;
 }
 
-footer ul li a, footer span {
+footer ul li a,
+footer span {
   text-decoration: none;
   font-size: 16px;
 }
@@ -54,7 +58,7 @@ footer ul li a, footer span {
 
 /* Small devices style code 
 portrait tablets and large phones, 767px and down) */
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 767px) {
   footer .mock-logo {
     display: none;
   }
@@ -64,23 +68,23 @@ portrait tablets and large phones, 767px and down) */
     flex-wrap: wrap;
     padding: 10px 15px;
   }
-  
+
   footer div {
     width: 50%;
     box-sizing: border-box;
     padding: 10px 0;
   }
 
-  .footer_connect{
+  .footer_connect {
     order: unset;
   }
 
-  .footer_email{
-    font-size: 10px;    
+  .footer_email {
+    font-size: 10px;
   }
 
-  footer div:last-child, footer div:nth-child(2){
+  footer div:last-child,
+  footer div:nth-child(2) {
     padding-right: 15px;
   }
 }
-

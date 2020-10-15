@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -14,13 +14,14 @@ portrait tablets and large phones, 767px and down) */
   height: 20px;
 }
 
-nav{
+nav {
   padding: 10px 0;
+  background-color: #0A0068;
 }
 
 nav li a {
   text-decoration: none;
-  color: #2B0050;
+  color: white;
   letter-spacing: 3px;
 }
 
@@ -40,14 +41,14 @@ nav button {
 }
 
 /* abling textNav when the toggle is onclick*/
-.textNav.active{
+.textNav.active {
   display: block;
   /* animation starts*/
   opacity: 0;
   transition: opacity 0.5s ease-out;
 }
 
-.textNav.active.fade-in{
+.textNav.active.fade-in {
   opacity: 1;
   /* animation ends */
 }
@@ -77,10 +78,10 @@ nav button {
 }
 
 /* Medium devices to Large devices (landscape tablets to desktops, 768px and up) */
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
   .mock-logo {
     position: relative;
-    top:0;
+    top: 0;
     left: 0;
   }
 
@@ -116,8 +117,8 @@ nav button {
     padding: 0vw 0.7vw;
   }
 
-  .textNav li a{
-    padding:0vw 3.5vw;
+  .textNav li a {
+    padding: 0vw 3.5vw;
   }
 
   /* social Nav style code */
@@ -137,6 +138,6 @@ nav button {
 
   .socialNav li a {
     font-size: 16px;
-    padding:0;
+    padding: 0;
   }
 }
