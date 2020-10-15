@@ -9,7 +9,7 @@ export const LandingPage = () => {
           Young Jin Kim
         </h2>
         <h1>
-          Full-Stack<br/>
+          Full-Stack
           Developer
         </h1>
         <h3>
