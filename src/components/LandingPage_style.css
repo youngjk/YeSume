@@ -25,7 +25,8 @@
 }
 
 .Main_Img {
-  min-width: 100%;
+  width: 100%;
+  min-width: 300px;
 }
 
 /* Text Style Code */
@@ -36,13 +37,13 @@
 .Landing_Main h2 {
   color: #DD78A4;
   font-family: 'Poppins';
-  font-size: 45px;
+  font-size: 4vw;
   margin-left: 7px;
 }
 
 .Landing_Main h3 {
   font-family: 'Poppins';
-  font-size: 25px;
+  font-size: 2vw;
   margin: 5px 0 0 7px;
 }
 
