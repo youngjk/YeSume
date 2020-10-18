@@ -28,7 +28,7 @@ nav li a {
 /* mobile nav toggle style code */
 nav button {
   position: absolute;
-  color: #2B0050;
+  color: white;
   border: none;
   background: none;
   top: 10px;
@@ -127,7 +127,7 @@ nav button {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    flex-grow: 2;
+    flex-grow: 1;
     top: 0;
     right: 0;
   }

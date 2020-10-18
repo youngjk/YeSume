@@ -8,7 +8,8 @@
 
 /* Images and Image Container Style Code */
 .Exp_Img {
-  width: 100%;
+  max-width: 100%;
+  min-width: 300px;
 }
 
 .Img_Con {
