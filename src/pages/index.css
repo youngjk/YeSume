@@ -1,5 +1,6 @@
-@import url(//db.onlinewebfonts.com/c/1231ae63051a492545b18104b75ebf51?family=Uber+Move+Text);
+@import url(https://fonts.googleapis.com/css?family=Rubik);
+@import url(https://fonts.googleapis.com/css?family=Poppins);
 
-*{
-  font-family: "Uber Move Text";
+* {
+  font-family: 'Rubik';
 }

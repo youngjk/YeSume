@@ -10,12 +10,15 @@ export const LandingPage = () => {
         </h2>
         <h1>
           Full-Stack
+        </h1>
+        <h1>
           Developer
         </h1>
         <h3>
           Based in Toronto, Canada
         </h3>
       </div>
+      
       <div class="Main_ImgContainer">
       <img class="Main_Img" src={"../../images/LandingPage.png"}
         alt="Main Image"></img>
