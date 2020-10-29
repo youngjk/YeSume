@@ -1,10 +1,10 @@
 import React from 'react'
-import './LandingPage_style.css'
+import './TitleImg_style.css'
 
-export const LandingPage = () => {
+export const TitleImg = () => {
   return (
-    <div class="Landing_Main">
-      <div class="Main_Heading">
+    <div class="landing-main">
+      <div class="main-heading">
         <h2>
           Young Jin Kim
         </h2>
@@ -19,9 +19,9 @@ export const LandingPage = () => {
         </h3>
       </div>
       
-      <div class="Main_ImgContainer">
-      <img class="Main_Img" src={"../../images/LandingPage.png"}
-        alt="Main Image"></img>
+      <div class="main-img-container">
+      <img class="main-img" src={"../../images/LandingPage.png"}
+        alt="Planet"/>
       </div>
     </div>
   )

@@ -3,13 +3,13 @@ import './Experience_style.css'
 
 export const Experience = () => {
   return (
-    <div class ="Experience">
+    <div class ="experience">
       <h1>Experience</h1>
 
-      <div class = "Container" id ="Border">
-        <div class = "Img_Con">
-          <img class="Exp_Img" src={"../../images/Verticalscope.png"}
-          alt="Vertical Scope Image"></img>
+      <div class = "container" id ="border">
+        <div class = "img-con">
+          <img class="exp-img" src={"../../images/Verticalscope.png"}
+          alt="Vertical Scope" />
         </div>
         <div>
           <h2>VerticalScope</h2>
@@ -24,8 +24,8 @@ export const Experience = () => {
         </div>
       </div>
 
-    <div class="Container">
-        <div id ="Text_Right">
+    <div class="container">
+        <div id ="text-right">
           <h2>Universe</h2>
           <h3>Dev-ops Developer</h3>
           <p>
@@ -35,16 +35,16 @@ export const Experience = () => {
           </p>
           <button>Learn More</button>
         </div>
-        <div class = "Img_Con">
-          <img class="Exp_Img" src={"../../images/Universe.png"}
-          alt="Universe Image"></img>
+        <div class = "img-con">
+          <img class="exp-img" src={"../../images/Universe.png"}
+          alt="Universe" />
         </div>
       </div>
 
-      <div class = "Container" id ="Border">
-        <div class = "Img_Con">
-          <img class="Exp_Img" src={"../../images/Universe_FullStack.png"}
-          alt="Universe Full Stack Image"></img>
+      <div class = "container" id ="border">
+        <div class = "img-con">
+          <img class="exp-img" src={"../../images/Universe_FullStack.png"}
+          alt="Universe Full Stack" />
         </div>
         <div>
           <h2>Universe</h2>
@@ -59,8 +59,8 @@ export const Experience = () => {
         </div>
       </div>
 
-      <div Class="Container">
-        <div id ="Text_Right">
+      <div Class="container">
+        <div id ="text-right">
           <h2>Flybits</h2>
           <h3>Software Developer</h3>
           <p>
@@ -71,16 +71,16 @@ export const Experience = () => {
           </p>
           <button>Learn More</button>
         </div>
-        <div class = "Img_Con">
-          <img class="Exp_Img" src={"../../images/Flybits.png"}
-          alt="Flybits Image"></img>
+        <div class = "img-con">
+          <img class="exp-img" src={"../../images/Flybits.png"}
+          alt="Flybits" />
         </div>
       </div>
 
-      <div class = "Container" id ="Border">
-        <div class = "Img_Con">
-          <img class="Exp_Img" src={"../../images/Klick.png"}
-          alt="Klick Inc Image"></img>
+      <div class = "container" id ="border">
+        <div class = "img-con">
+          <img class="exp-img" src={"../../images/Klick.png"}
+          alt="Klick Inc" />
         </div>
         <div>
           <h2>Klick Inc</h2>

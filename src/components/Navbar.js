@@ -28,13 +28,13 @@ export const Navbar = () => {
     <nav>
       {/* Mock-up logo */}
       <img class="mock-logo" src={"../../images/mock-logo.png"}
-        alt="mock-logo"></img>
+        alt="mock-logo" />
 
       <button class="navbar-toggle" id="mobile-navbar-toggle" onClick={ToggleHandler}>
         <FontAwesomeIcon icon={faBars} />
       </button>
 
-      <div class="textNav" ref={textNav}>
+      <div class="text-nav" ref={textNav}>
         <ul>
           <li>
             <Link to="/">Home</Link>
@@ -48,7 +48,7 @@ export const Navbar = () => {
         </ul>
       </div>
 
-      <div class="socialNav">
+      <div class="social-nav">
         <ul>
           <li>
             <Link to="https://www.facebook.com">

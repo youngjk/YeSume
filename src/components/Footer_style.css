@@ -12,7 +12,7 @@ footer {
 footer h3,
 footer a,
 footer span {
-  color: white;
+  color: #ffffff;
 }
 
 footer h3 {
@@ -23,7 +23,7 @@ footer h3 {
 footer div {
   display: flex;
   flex-direction: column;
-  padding: 0 3.5vw;
+  padding: 0 35px;
   width: 30%;
 }
 
@@ -32,7 +32,7 @@ footer div:nth-child(3) {
   padding-right: 0;
 }
 
-.footer_connect {
+.footer-connect {
   order: 4;
 }
 
@@ -75,11 +75,11 @@ portrait tablets and large phones, 767px and down) */
     padding: 10px 0;
   }
 
-  .footer_connect {
+  .footer-connect {
     order: unset;
   }
 
-  .footer_email {
+  .footer-email {
     font-size: 10px;
   }
 

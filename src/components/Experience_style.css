@@ -1,5 +1,5 @@
 /* Outter Container Style Code */
-.Experience {
+.experience {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,36 +7,36 @@
 }
 
 /* Images and Image Container Style Code */
-.Exp_Img {
+.exp-img {
   max-width: 100%;
   min-width: 300px;
 }
 
-.Img_Con {
+.img-con {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 /* Inner Container Style Code */
-.Container {
+.container {
   display: flex;
   flex-flow: row wrap;
   margin: 20px 100px;
 }
 
-#Border.Container {
+#border.container {
   border: 1px solid rgb(233, 232, 241);
   box-shadow: 7px 10px rgb(233, 232, 241);
   border-radius: 100px;
 }
 
-#Border.Container:last-child {
+#border.container:last-child {
   margin-bottom: 100px;
 }
 
 /* Text Container Style Code */
-.Container div {
+.container div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,40 +45,40 @@
 }
 
 /* Text Style Code */
-.Experience h1 {
+.experience h1 {
   color: #0A0068;
   font-size: 60px;
   margin: 30px;
 }
 
-.Experience h2 {
+.experience h2 {
   color: #0A0068;
   font-size: 45px;
   font-weight: 900;
   margin: 0 0 30px 0;
 }
 
-.Experience h3 {
+.experience h3 {
   color: #5863EF;
   font-size: 25px;
   margin-bottom: 20px;
 }
 
-.Experience p {
+.experience p {
   font-family: 'Poppins';
   line-height: 30px;
   margin-bottom: 20px;
 }
 
-#Text_Right {
+#text-right {
   text-align: right;
   align-items: flex-end;
 }
 
 /* Button Style Code */
-.Experience button {
+.experience button {
   background-color: #0A0068;
-  color: white;
+  color: #ffffff;
   border: none;
   border-radius: 35px;
   padding: 10px;

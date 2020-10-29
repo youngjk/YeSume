@@ -26,7 +26,7 @@ export const Footer = () => {
         </ul>
       </div>
 
-      <div class="footer_connect">
+      <div class="footer-connect">
         <h3>Connect</h3>
         <ul>
           <li>
@@ -57,7 +57,7 @@ export const Footer = () => {
             <span>Young Jin Kim</span>
           </li>
           <li>
-            <Link to="mailto:yj42kim@gmail.com" class="footer_email">
+            <Link to="mailto:yj42kim@gmail.com" class="footer-email">
               yj42kim@gamil.com
             </Link>
           </li>
