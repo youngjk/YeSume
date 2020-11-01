@@ -4,6 +4,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: auto;
+  max-width: 1440px;
 }
 
 /* Images and Image Container Style Code */

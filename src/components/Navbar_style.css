@@ -16,7 +16,6 @@ portrait tablets and large phones, 767px and down) */
 
 nav {
   padding: 10px 0;
-  background-color: #0A0068;
 }
 
 nav li a {
@@ -90,8 +89,10 @@ nav button {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
     height: 50px;
     padding: 10px 100px;
+    max-width: 1440px;
   }
 
   nav button {

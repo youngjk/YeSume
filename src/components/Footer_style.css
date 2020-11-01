@@ -4,8 +4,9 @@
 footer {
   display: flex;
   justify-content: center;
-  background-color: #0A0068;
+  margin: auto;
   padding: 30px 100px;
+  max-width: 1440px;
 }
 
 /* footer font style code */
@@ -24,7 +25,7 @@ footer div {
   display: flex;
   flex-direction: column;
   padding: 0 40px;
-  width: 30%;
+  width: 23%;
 }
 
 footer div:nth-child(2),

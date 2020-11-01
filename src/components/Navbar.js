@@ -25,48 +25,50 @@ export const Navbar = () => {
   }
 
   return (
-    <nav>
-      {/* Mock-up logo */}
-      <img class="mock-logo" src={"../../images/mock-logo.png"}
-        alt="mock-logo" />
+    <div class= "background">
+      <nav>
+        {/* Mock-up logo */}
+        <img class="mock-logo" src={"../../images/mock-logo.png"}
+          alt="mock-logo" />
 
-      <button class="navbar-toggle" id="mobile-navbar-toggle" onClick={ToggleHandler}>
-        <FontAwesomeIcon icon={faBars} />
-      </button>
+        <button class="navbar-toggle" id="mobile-navbar-toggle" onClick={ToggleHandler}>
+          <FontAwesomeIcon icon={faBars} />
+        </button>
 
-      <div class="text-nav" ref={textNav}>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/career">Career</Link>
-          </li>
-          <li>
-            <Link to="/investment">Investment</Link>
-          </li>
-        </ul>
-      </div>
+        <div class="text-nav" ref={textNav}>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/career">Career</Link>
+            </li>
+            <li>
+              <Link to="/investment">Investment</Link>
+            </li>
+          </ul>
+        </div>
 
-      <div class="social-nav">
-        <ul>
-          <li>
-            <Link to="https://www.facebook.com">
-              <FontAwesomeIcon icon={faFacebookF} />
-            </Link>
-          </li>
-          <li>
-            <Link to="https://www.linkedin.com">
-              <FontAwesomeIcon icon={faLinkedinIn} />
-            </Link>
-          </li>
-          <li>
-            <Link to="https://www.instagram.com">
-              <FontAwesomeIcon icon={faInstagram} />
-            </Link>
-          </li>
-        </ul>
-      </div>
-    </nav >
+        <div class="social-nav">
+          <ul>
+            <li>
+              <Link to="https://www.facebook.com">
+                <FontAwesomeIcon icon={faFacebookF} />
+              </Link>
+            </li>
+            <li>
+              <Link to="https://www.linkedin.com">
+                <FontAwesomeIcon icon={faLinkedinIn} />
+              </Link>
+            </li>
+            <li>
+              <Link to="https://www.instagram.com">
+                <FontAwesomeIcon icon={faInstagram} />
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   )
 }
