@@ -24,7 +24,7 @@ export const Experience = () => {
         </div>
       </div>
 
-    <div className="container" id="reverse">
+      <div className="container" id="reverse">
         <div id ="text-right">
           <h2>Universe</h2>
           <h3>Dev-ops Developer</h3>

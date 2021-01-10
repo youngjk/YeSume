@@ -36,19 +36,19 @@ export const Navbar = () => {
         </button>
 
         <div className="nav">
-        <div className="text-nav" ref={textNav}>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/career">Career</Link>
-            </li>
-            <li>
-              <Link to="/investment">Contact</Link>
-            </li>
-          </ul>
-        </div>
+          <div className="text-nav" ref={textNav}>
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/career">Career</Link>
+              </li>
+              <li>
+                <Link to="/investment">Contact</Link>
+              </li>
+            </ul>
+          </div>
           <ul>
             <li>
               <Link to="https://www.facebook.com">

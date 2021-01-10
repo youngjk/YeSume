@@ -15,14 +15,13 @@ export const TitleImg = () => {
           <h1>
             ENGINEER
           </h1>
-          
           <h3>
-            Based in Toronto, Canada
+          Based in Toronto, Canada
           </h3>
         </div>
         
         <div className="main-img-container">
-        <img className="main-img" src={"../../images/LandingPage.png"}
+          <img className="main-img" src={"../../images/LandingPage.png"}
           alt="Planet"/>
         </div>
       </div>
