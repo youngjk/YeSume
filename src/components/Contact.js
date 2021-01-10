@@ -4,7 +4,7 @@ import './Contact_style.css'
 export const Contact = () => {
   return(
     <div className="contact">
-      <img src={"../../images/satelite.png"} className="satelite-img" />
+      <img className="satelite-img" src={"../../images/satelite.png"} />
       <div className="contact-text">
         <h2>LET'S SYNC</h2>
         <p>
