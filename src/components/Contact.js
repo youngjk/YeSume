@@ -1,17 +1,29 @@
-import React, { PureComponent } from 'react'
-import PropTypes from 'prop-types'
+import React from 'react'
+import './Contact_style.css'
 
 export const Contact = () => {
   return(
-    <div>
-      <h2>LET'S SYNC</h2>
-      <p>
-        Lets work together to creat game-changing experiences
-        that will take your brand from bland to buzzworthy.
-      </p>
-      <div className="github">
+    <div className="contact">
+      <img src={"../../images/satelite.png"} className="satelite-img" />
+      <div className="contact-text">
+        <h2>LET'S SYNC</h2>
+        <p>
+          Lets work together to creat game-changing experiences
+          that will take your brand from bland to buzzworthy.
+        </p>
+      </div>
+      <div className="contact-link">
         <a href="#">
-          <img src="" alt="github image" />
+          <img id="github" src={"../../images/github.png"} alt="github image" />
+        </a>
+        <a href="#">
+          <img id="instagram" src={"../../images/instagram.png"} alt="instagram image" />
+        </a>
+        <a href="#">
+          <img id="linkedin" src={"../../images/linkedin.png"} alt="linkedin image" />
+        </a>
+        <a href="#">
+          <img id="facebook" src={"../../images/facebook.png"} alt="facebook image" />
         </a>
       </div>
     </div>
