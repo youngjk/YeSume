@@ -32,20 +32,21 @@
 
 /* Text Style Code */
 .landing-main h1 {
-  font-size: 100px;
+  font-size: clamp(42px,100px,4vw);
+  margin: 10px 0;
 }
 
 .landing-main h2 {
-  color: #DD78A4;
-  font-family: 'Poppins';
-  font-size: 4vw;
-  margin-left: 7px;
+  color: #ffffff;
+  font-size: clamp(18px,32px,3vw);
+  font-weight: 500;
+  margin: 0 0 20px 0;
 }
 
 .landing-main h3 {
-  font-family: 'Poppins';
-  font-size: 2vw;
-  margin: 5px 0 0 7px;
+  font-size: clamp(12px,24px, 2vw);
+  font-weight: 500;
+  margin: 20px 0 0 3px;
 }
 
 .landing-main h1,

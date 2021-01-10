@@ -7,9 +7,11 @@ import { Experience } from '../components/Experience'
 
 export default function Home() {
   return (
-    <div class="index-container">
-      <Navbar />
-      <TitleImg />
+    <div className="index-container">
+      <div className="title-background">
+        <Navbar />
+        <TitleImg />
+      </div>
       <Experience />
       <Footer />
     </div>

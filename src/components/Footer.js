@@ -6,12 +6,13 @@ import { faLinkedinIn, faFacebookF, faInstagram } from "@fortawesome/free-brands
 
 export const Footer = () => {
   return (
-    <div class ="background">
+    <div className="background">
       <footer>
         {/* Mock-up logo */}
-        <img class="mock-logo" src={"../../images/mock-logo.png"}
+        <img className="mock-logo" src={"../../images/mock-logo.png"}
           alt="mock-logo"></img>
 
+        <div className="footer-wrap">
         <div>
           <h3>Pages</h3>
           <ul>
@@ -27,7 +28,7 @@ export const Footer = () => {
           </ul>
         </div>
 
-        <div class="footer-connect">
+        <div className="footer-connect">
           <h3>Connect</h3>
           <ul>
             <li>
@@ -58,11 +59,12 @@ export const Footer = () => {
               <span>Young Jin Kim</span>
             </li>
             <li>
-              <Link to="mailto:yj42kim@gmail.com" class="footer-email">
+              <Link to="mailto:yj42kim@gmail.com" className="footer-email">
                 yj42kim@gamil.com
               </Link>
             </li>
           </ul>
+        </div>
         </div>
       </footer>
     </div>

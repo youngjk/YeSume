@@ -1,10 +1,17 @@
-@import url(https://fonts.googleapis.com/css?family=Rubik);
+@font-face{font-family: Azonix; src:url('../../static/fonts/Azonix-1VB0.otf');}
 @import url(https://fonts.googleapis.com/css?family=Poppins);
 
-* {
-  font-family: 'Rubik';
+*{
+  font-family: 'Azonix';
 }
 
-.background {
-  background-color: #0A0068;
+.title-background {
+  background-image: url('../../static/images/LandingBackground.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.background{
+  background-color: #0B0668;
 }

@@ -3,12 +3,12 @@ import './Experience_style.css'
 
 export const Experience = () => {
   return (
-    <div class ="experience">
+    <div className="experience">
       <h1>Experience</h1>
 
-      <div class = "container" id ="border">
-        <div class = "img-con">
-          <img class="exp-img" src={"../../images/Verticalscope.png"}
+      <div className="container">
+        <div className="img-con">
+          <img className="exp-img" src={"../../images/Verticalscope.png"}
           alt="Vertical Scope" />
         </div>
         <div>
@@ -24,7 +24,7 @@ export const Experience = () => {
         </div>
       </div>
 
-    <div class="container">
+    <div className="container" id="reverse">
         <div id ="text-right">
           <h2>Universe</h2>
           <h3>Dev-ops Developer</h3>
@@ -35,15 +35,15 @@ export const Experience = () => {
           </p>
           <button>Learn More</button>
         </div>
-        <div class = "img-con">
-          <img class="exp-img" src={"../../images/Universe.png"}
+        <div className="img-con">
+          <img className="exp-img" src={"../../images/Universe.png"}
           alt="Universe" />
         </div>
       </div>
 
-      <div class = "container" id ="border">
-        <div class = "img-con">
-          <img class="exp-img" src={"../../images/Universe_FullStack.png"}
+      <div className="container">
+        <div className="img-con">
+          <img className="exp-img" src={"../../images/Universe_FullStack.png"}
           alt="Universe Full Stack" />
         </div>
         <div>
@@ -59,8 +59,8 @@ export const Experience = () => {
         </div>
       </div>
 
-      <div Class="container">
-        <div id ="text-right">
+      <div className="container" id="reverse">
+        <div id="text-right">
           <h2>Flybits</h2>
           <h3>Software Developer</h3>
           <p>
@@ -71,15 +71,15 @@ export const Experience = () => {
           </p>
           <button>Learn More</button>
         </div>
-        <div class = "img-con">
-          <img class="exp-img" src={"../../images/Flybits.png"}
+        <div className="img-con">
+          <img className="exp-img" src={"../../images/Flybits.png"}
           alt="Flybits" />
         </div>
       </div>
 
-      <div class = "container" id ="border">
-        <div class = "img-con">
-          <img class="exp-img" src={"../../images/Klick.png"}
+      <div className="container">
+        <div className="img-con">
+          <img className="exp-img" src={"../../images/Klick.png"}
           alt="Klick Inc" />
         </div>
         <div>
