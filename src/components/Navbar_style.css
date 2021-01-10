@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -14,20 +14,20 @@ portrait tablets and large phones, 767px and down) */
   height: 20px;
 }
 
-nav{
+nav {
   padding: 10px 0;
 }
 
 nav li a {
   text-decoration: none;
-  color: #2B0050;
+  color: #ffffff;
   letter-spacing: 3px;
 }
 
 /* mobile nav toggle style code */
 nav button {
   position: absolute;
-  color: #2B0050;
+  color: #ffffff;
   border: none;
   background: none;
   top: 10px;
@@ -35,52 +35,52 @@ nav button {
 }
 
 /* disable textNav on default*/
-.textNav {
+.text-nav {
   display: none;
 }
 
 /* abling textNav when the toggle is onclick*/
-.textNav.active{
+.text-nav.active {
   display: block;
   /* animation starts*/
   opacity: 0;
   transition: opacity 0.5s ease-out;
 }
 
-.textNav.active.fade-in{
+.text-nav.active.fade-in {
   opacity: 1;
   /* animation ends */
 }
 
-.textNav.active li {
+.text-nav.active li {
   text-align: center;
   padding: 3px;
 }
 
-.socialNav {
+.nav {
   position: absolute;
   top: 10px;
   right: 20px;
 }
 
-.socialNav li {
+.nav li {
   display: inline;
-  padding: 0 2vw;
+  padding: 0 5px;
 }
 
-.socialNav li:last-child {
+.nav li:last-child {
   padding-right: 0;
 }
 
-.socialNav li a {
+.nav li a {
   font-size: 15px;
 }
 
 /* Medium devices to Large devices (landscape tablets to desktops, 768px and up) */
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
   .mock-logo {
     position: relative;
-    top:0;
+    top: 0;
     left: 0;
   }
 
@@ -89,8 +89,10 @@ nav button {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
     height: 50px;
     padding: 10px 100px;
+    max-width: 1440px;
   }
 
   nav button {
@@ -106,37 +108,38 @@ nav button {
   }
 
   /* text Nav style code */
-  .textNav {
+  .text-nav {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
   }
 
-  .textNav li {
-    padding: 0vw 0.7vw;
+  .text-nav li {
+    padding: 0 5px;
   }
 
-  .textNav li a{
-    padding:0vw 3.5vw;
+  .text-nav li a {
+    padding: 0 30px;
   }
 
   /* social Nav style code */
-  .socialNav {
+  .nav {
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    flex-grow: 2;
+    align-items: center;
+    flex-grow: 1;
     top: 0;
     right: 0;
   }
 
-  .socialNav li {
-    padding: 0vw 0.8vw;
+  .nav > ul li {
+    padding: 0 8px;
   }
 
-  .socialNav li a {
-    font-size: 16px;
-    padding:0;
+  .nav > ul li a {
+    font-size: min(24px, 2vw);
+    padding: 0;
   }
 }
