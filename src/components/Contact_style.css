@@ -26,7 +26,8 @@
   text-align: center;
   color: #fff;
   width: 70%;
-  max-width: 800px;
+  max-width: 600px;
+  word-spacing: 5px;
 }
 
 .contact-text h2 {
@@ -35,7 +36,9 @@
 }
 
 .contact-text p {
+  font-family: "Poppins";
   font-size: max(12px, 1vw);
+  line-height: 50px;
 }
 
 .contact-link {
