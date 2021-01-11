@@ -5,7 +5,6 @@ export const Experience = () => {
   return (
     <div className="experience">
       <h1>Experience</h1>
-
       <div className="container">
         <div className="img-con">
           <img className="exp-img" src={"../../images/Verticalscope.png"}
@@ -23,7 +22,6 @@ export const Experience = () => {
           <button>Learn More</button>
         </div>
       </div>
-
       <div className="container" id="reverse">
         <div id ="text-right">
           <h2>Universe</h2>
@@ -40,7 +38,6 @@ export const Experience = () => {
           alt="Universe" />
         </div>
       </div>
-
       <div className="container">
         <div className="img-con">
           <img className="exp-img" src={"../../images/Universe_FullStack.png"}
@@ -58,7 +55,6 @@ export const Experience = () => {
           <button>Learn More</button>
         </div>
       </div>
-
       <div className="container" id="reverse">
         <div id="text-right">
           <h2>Flybits</h2>
@@ -76,7 +72,6 @@ export const Experience = () => {
           alt="Flybits" />
         </div>
       </div>
-
       <div className="container">
         <div className="img-con">
           <img className="exp-img" src={"../../images/Klick.png"}
