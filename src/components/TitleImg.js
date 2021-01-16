@@ -19,7 +19,6 @@ export const TitleImg = () => {
           Based in Toronto, Canada
           </h3>
         </div>
-        
         <div className="main-img-container">
           <img className="main-img" src={"../../images/LandingPage.png"}
           alt="Planet"/>

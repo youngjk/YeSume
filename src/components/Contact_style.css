@@ -1,0 +1,73 @@
+.contact {
+  background-image: url('../../static/images/contactBackground.png');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30%;
+}
+
+.satelite-img {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  width: 40%;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  width: 70%;
+  max-width: 600px;
+  word-spacing: 5px;
+}
+
+.contact-text h2 {
+  padding: 20px;
+  font-size: max(36px, 3vw);
+}
+
+.contact-text p {
+  font-family: "Poppins";
+  font-size: max(12px, 1vw);
+  line-height: 50px;
+}
+
+.contact-link {
+  position: relative;
+  height: max(800px,50vw);
+  width: 80%;
+  max-width: 1440px;
+}
+
+img#github {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+
+img#instagram {
+  position: absolute;
+  top: 18%;
+  right: 20%;
+}
+
+img#linkedin {
+  position: absolute;
+  bottom: 15%;
+  left: 25%;
+}
+
+img#facebook{
+  position: absolute;
+  bottom: 25%;
+  right: 8%;
+}

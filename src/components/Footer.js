@@ -10,8 +10,7 @@ export const Footer = () => {
       <footer>
         {/* Mock-up logo */}
         <img className="mock-logo" src={"../../images/mock-logo.png"}
-          alt="mock-logo"></img>
-
+          alt="mock-logo" />
         <div className="footer-wrap">
           <div>
             <h3>Pages</h3>
@@ -27,7 +26,6 @@ export const Footer = () => {
               </li>
             </ul>
           </div>
-
           <div className="footer-connect">
             <h3>Connect</h3>
             <ul>
@@ -51,7 +49,6 @@ export const Footer = () => {
               </li>
             </ul>
           </div>
-
           <div>
             <h3>Contact</h3>
             <ul>
