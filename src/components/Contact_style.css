@@ -32,7 +32,7 @@
 
 .contact-text h2 {
   padding: 20px;
-  font-size: max(36px, 3vw);
+  font-size: max(28px, 3vw);
 }
 
 .contact-text p {
@@ -70,4 +70,53 @@ img#facebook{
   position: absolute;
   bottom: 25%;
   right: 8%;
+}
+
+/* Small devices style code 
+portrait tablets and large phones, 767px and down) */
+@media only screen and (max-width: 767px) {
+  .contact{
+    padding-top: 0;
+    background-position: left;
+    background-size: 300%;
+  }
+
+  .contact-link{
+    height: 400px;
+  }
+
+  .contact-text p {
+    line-height: normal;
+  }
+
+  .satelite-img {
+    top: 50%;
+    right: 30%;
+    width: 30%;
+  }
+
+  img#github {
+    width: 100px;
+    top: 8%;
+    left: 0;
+  }
+  
+  img#instagram {
+    width: 70px;
+    top: 24%;
+    right: 8%;
+  }
+  
+  img#linkedin {
+    width: 90px;
+    bottom: 20%;
+    left: 3%;
+  }
+  
+  img#facebook{
+    width: 70px;
+    bottom: 18%;
+    right: 0;
+  }
+
 }

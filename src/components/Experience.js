@@ -19,7 +19,7 @@ export const Experience = () => {
             platform and centralizing a core infrastructure 
             for all platforms on GCP.
           </p>
-          <button>Learn More</button>
+          <button className="learn-more-btn">Learn More</button>
         </div>
       </div>
       <div className="container" id="reverse">
@@ -31,7 +31,7 @@ export const Experience = () => {
             in Universe. Developed and maintained a 
             modern cloud  infrastructure on GCP.
           </p>
-          <button>Learn More</button>
+          <button className="learn-more-btn">Learn More</button>
         </div>
         <div className="img-con">
           <img className="exp-img" src={"../../images/Universe.png"}
@@ -52,7 +52,7 @@ export const Experience = () => {
             end to end basis. Ranging from features 
             such as ticket waitlists to add-ons purchases.
           </p>
-          <button>Learn More</button>
+          <button className="learn-more-btn">Learn More</button>
         </div>
       </div>
       <div className="container" id="reverse">
@@ -65,7 +65,7 @@ export const Experience = () => {
             and various information for developers 
             around company’s core API.
           </p>
-          <button>Learn More</button>
+          <button className="learn-more-btn">Learn More</button>
         </div>
         <div className="img-con">
           <img className="exp-img" src={"../../images/Flybits.png"}
@@ -87,7 +87,7 @@ export const Experience = () => {
             designs. Exposure to extensive browser 
             and os specific support for websites.
           </p>
-          <button>Learn More</button>
+          <button className="learn-more-btn">Learn More</button>
         </div>
       </div>
     </div>

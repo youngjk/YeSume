@@ -1,0 +1,65 @@
+.mobile-slider-container h1{
+  text-align: center;
+  color: #0A0068;
+  padding: 50px;
+}
+
+.mobile-slider {
+  padding: 20px 0;
+}
+
+.mobile-slider-element{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  max-width: 500px;
+  padding: 10px 30px;
+}
+
+
+.mobile-slider-element > .img-con {
+  width: 50%;
+}
+
+.mobile-slider-element h2{
+  color: #0A0068;
+  margin-top: 100px;
+}
+
+.mobile-slider-element h3{
+  margin: 25px;
+  font-size: 16px;
+}
+
+.mobile-slider-element p{
+  font-family: 'Poppins';
+  text-align: center;
+  line-height: 20px;
+  padding: 10px 20px 20px 10px;
+}
+.mobile-slider{
+  height: 700px;
+}
+
+.awssld__bullets > button {
+  position:unset;
+}
+
+.awssld__controls{
+  visibility:visible;
+  color: #0A0068;
+}
+
+.awssld__bullets{
+  position: absolute;
+  bottom: 45%;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .awssld {
+    display: none;
+  }
+}

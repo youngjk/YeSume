@@ -41,23 +41,31 @@ nav button {
 
 /* abling textNav when the toggle is onclick*/
 .text-nav.active {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* animation starts*/
   opacity: 0;
   transition: opacity 0.5s ease-out;
 }
 
 .text-nav.active.fade-in {
+  display: flex;
   opacity: 1;
   /* animation ends */
 }
 
-.text-nav.active li {
-  text-align: center;
-  padding: 3px;
+.text-nav.active.fade-in ul {
+  display: flex;
+  flex-flow: column wrap;
 }
 
-.nav {
+.text-nav.active li {
+  text-align: center;
+  padding: 10px;
+}
+
+.social-nav{
   position: absolute;
   top: 10px;
   right: 20px;
@@ -66,10 +74,6 @@ nav button {
 .nav li {
   display: inline;
   padding: 0 5px;
-}
-
-.nav li:last-child {
-  padding-right: 0;
 }
 
 .nav li a {
@@ -134,6 +138,10 @@ nav button {
     right: 0;
   }
 
+  .nav li:last-child {
+    padding-right: 0;
+  }
+
   .nav > ul li {
     padding: 0 8px;
   }
@@ -141,5 +149,9 @@ nav button {
   .nav > ul li a {
     font-size: min(24px, 2vw);
     padding: 0;
+  }
+
+  .social-nav{
+    position: unset;
   }
 }

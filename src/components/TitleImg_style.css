@@ -17,6 +17,10 @@
   flex: 1;
 }
 
+.hidden-heading{
+  display: none;
+}
+
 /* Image Container Style Code */
 .main-img-container {
   display: flex;
@@ -52,4 +56,37 @@
 .landing-main h1,
 .landing-main h3 {
   color: #ffffff;
+}
+
+/* Small devices style code 
+portrait tablets and large phones, 767px and down) */
+@media only screen and (max-width: 767px) {
+  .main-heading h1,
+  .main-heading h3 {
+    display: none;
+  }
+
+  .main-heading h2 {
+    margin: 40px 0 0 0;
+  }
+  
+  .main-heading {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hidden-heading {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hidden-heading h1 {
+    margin: 0;
+  }
+
+  .hidden-heading h3 {
+    margin: 30px 0;
+  }
 }

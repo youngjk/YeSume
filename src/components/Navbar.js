@@ -49,7 +49,7 @@ export const Navbar = () => {
               </li>
             </ul>
           </div>
-          <ul>
+          <ul className="social-nav">
             <li>
               <Link to="https://www.facebook.com">
                 <FontAwesomeIcon icon={faFacebookSquare} />

@@ -23,6 +23,17 @@ export const TitleImg = () => {
           <img className="main-img" src={"../../images/LandingPage.png"}
           alt="Planet"/>
         </div>
+        <div className="hidden-heading">
+        <h1>
+            PLATFORM
+          </h1>
+          <h1>
+            ENGINEER
+          </h1>
+          <h3>
+          Based in Toronto, Canada
+          </h3>
+        </div>
       </div>
     </div>
   )

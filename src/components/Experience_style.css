@@ -76,7 +76,7 @@
 }
 
 /* Button Style Code */
-.experience button {
+button.learn-more-btn {
   background-color: #0A0068;
   color: #ffffff;
   border: none;
@@ -89,5 +89,8 @@
   #text-right{
     text-align: left;
     align-items: flex-start;
+  }
+  .experience{
+    display: none;
   }
 }

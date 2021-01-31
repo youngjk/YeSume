@@ -80,13 +80,13 @@ portrait tablets and large phones, 767px and down) */
 
   .footer-wrap {
     width: 50%;
-    flex-flow: column wrap;
-    justify-content: center;
+    flex-flow: row;
+    justify-content: space-around;
     padding: 10px 0;
   }
 
-  .footer-connect {
-    order: unset;
+  div.footer-connect{
+    display: none;
   }
 
   .footer-email {
