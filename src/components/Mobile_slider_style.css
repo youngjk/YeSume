@@ -1,3 +1,4 @@
+/* Mobile Slider Style Code */
 .mobile-slider-container h1{
   text-align: center;
   color: #0A0068;
@@ -5,6 +6,7 @@
 }
 
 .mobile-slider {
+  height: 700px;
   padding: 20px 0;
 }
 
@@ -39,10 +41,8 @@
   line-height: 20px;
   padding: 10px 20px 20px 10px;
 }
-.mobile-slider{
-  height: 700px;
-}
 
+/* Overrided Style Code for AwesomeSlider */
 .awssld__bullets > button {
   position:unset;
 }
@@ -58,6 +58,7 @@
   width: 100%;
 }
 
+/* Medium devices to Large devices (landscape tablets to desktops, 768px and up) */
 @media only screen and (min-width: 768px) {
   .awssld {
     display: none;
