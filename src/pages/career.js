@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function career() {
+export default function Career() {
   return (
     <div>CAREER PAGE</div>
   )
