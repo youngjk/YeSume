@@ -64,6 +64,11 @@ export const Footer = () => {
           </div>
         </div>
       </footer>
+      <div id="mobile-footer">
+        <Link to="/about">About</Link>
+        <Link to="/career">Career</Link>
+        <Link to="/contact">Contact</Link>
+      </div>
     </div>
   )
 }

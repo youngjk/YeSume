@@ -61,6 +61,10 @@
 /* Small devices style code 
 portrait tablets and large phones, 767px and down) */
 @media only screen and (max-width: 767px) {
+  .landing-main{
+    padding: 0;
+    flex-flow: column;
+  }
   .main-heading h1,
   .main-heading h3 {
     display: none;
@@ -68,11 +72,13 @@ portrait tablets and large phones, 767px and down) */
 
   .main-heading h2 {
     margin: 40px 0 0 0;
+    text-align: center;
   }
   
   .main-heading {
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
 
   .hidden-heading {

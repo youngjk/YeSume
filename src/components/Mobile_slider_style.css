@@ -2,12 +2,11 @@
 .mobile-slider-container h1{
   text-align: center;
   color: #0A0068;
-  padding: 50px;
+  padding: 50px 50px 0 50px;
 }
 
 .mobile-slider {
   height: 700px;
-  padding: 20px 0;
 }
 
 .mobile-slider-element{
@@ -31,6 +30,7 @@
 }
 
 .mobile-slider-element h3{
+  color: #5863EF;
   margin: 25px;
   font-size: 16px;
 }
@@ -45,6 +45,8 @@
 /* Overrided Style Code for AwesomeSlider */
 .awssld__bullets > button {
   position:unset;
+  width: 12px;
+  height: 12px;
 }
 
 .awssld__controls{
@@ -54,10 +56,14 @@
 
 .awssld__bullets{
   position: absolute;
-  bottom: 45%;
+  bottom: 49%;
   width: 100%;
 }
-
+.awssld {
+  --organic-arrow-height: 30px;
+  --control-button-height:1;
+  --content-background-color: transparent !important;
+}
 /* Medium devices to Large devices (landscape tablets to desktops, 768px and up) */
 @media only screen and (min-width: 768px) {
   .awssld {
