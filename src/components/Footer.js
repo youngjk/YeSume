@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link } from 'react-router-dom'
 import './Footer_style.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn, faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
@@ -9,7 +9,7 @@ export const Footer = () => {
     <div className="background">
       <footer>
         {/* Mock-up logo */}
-        <img className="mock-logo" src={"../../images/mock-logo.png"}
+        <img className="mock-logo" src="images/mock-logo.png"
           alt="mock-logo" />
         <div className="footer-wrap">
           <div>

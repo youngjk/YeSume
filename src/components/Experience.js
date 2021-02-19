@@ -7,7 +7,7 @@ export const Experience = () => {
       <h1>Experience</h1>
       <div className="container">
         <div className="img-con">
-          <img className="exp-img" src={"../../images/Verticalscope.png"}
+          <img className="exp-img" src={"images/Verticalscope.png"}
           alt="Vertical Scope" />
         </div>
         <div>
@@ -34,13 +34,13 @@ export const Experience = () => {
           <button className="learn-more-btn">Learn More</button>
         </div>
         <div className="img-con">
-          <img className="exp-img" src={"../../images/Universe.png"}
+          <img className="exp-img" src={"images/Universe.png"}
           alt="Universe" />
         </div>
       </div>
       <div className="container">
         <div className="img-con">
-          <img className="exp-img" src={"../../images/Universe_FullStack.png"}
+          <img className="exp-img" src={"images/Universe_FullStack.png"}
           alt="Universe Full Stack" />
         </div>
         <div>
@@ -68,13 +68,13 @@ export const Experience = () => {
           <button className="learn-more-btn">Learn More</button>
         </div>
         <div className="img-con">
-          <img className="exp-img" src={"../../images/Flybits.png"}
+          <img className="exp-img" src={"images/Flybits.png"}
           alt="Flybits" />
         </div>
       </div>
       <div className="container">
         <div className="img-con">
-          <img className="exp-img" src={"../../images/Klick.png"}
+          <img className="exp-img" src={"images/Klick.png"}
           alt="Klick Inc" />
         </div>
         <div>

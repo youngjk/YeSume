@@ -20,7 +20,7 @@ export const TitleImg = () => {
           </h3>
         </div>
         <div className="main-img-container">
-          <img className="main-img" src={"../../images/LandingPage.png"}
+          <img className="main-img" src={"images/LandingPage.png"}
           alt="Planet"/>
         </div>
         <div className="hidden-heading">

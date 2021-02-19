@@ -1,13 +1,10 @@
 import React from 'react';
-import AwesomeSlider from 'react-awesome-slider';
-import 'react-awesome-slider/dist/styles.css';
-import './Mobile_slider_style.css';
 
 export const MobileSlider = () => {
   return (
   <div className="mobile-slider-container">
-    <h1>Experience</h1> 
-    <AwesomeSlider
+    {/* <h1>Experience</h1>  */}
+    {/* <AwesomeSlider
       animation="foldOutAnimation"
       className="mobile-slider"
     >
@@ -86,7 +83,7 @@ export const MobileSlider = () => {
         </p>
         <button className="learn-more-btn">Learn More</button>
       </div>
-    </AwesomeSlider>
+    </AwesomeSlider> */}
   </div>
   )
 }

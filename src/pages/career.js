@@ -1,7 +1,8 @@
 import React from 'react'
-
 export default function Career() {
   return (
-    <div>CAREER PAGE</div>
+    <div>CAREER PAGE
+      
+    </div>
   )
 }

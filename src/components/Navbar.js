@@ -1,10 +1,10 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link } from 'react-router-dom'
 import './Navbar_style.css'
 
 // import Font Awesome social media icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faFacebookSquare, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faFacebookSquare, faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 export const Navbar = () => {
@@ -28,7 +28,7 @@ export const Navbar = () => {
     <div>
       <nav>
         {/* Mock-up logo */}
-        <img className="mock-logo" src={"../../images/mock-logo.png"}
+        <img className="mock-logo" src={"images/mock-logo.png"}
           alt="mock-logo" />
 
         <button className="navbar-toggle" id="mobile-navbar-toggle" onClick={ToggleHandler}>
