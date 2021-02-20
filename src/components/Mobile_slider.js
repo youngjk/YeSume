@@ -21,18 +21,24 @@ export const MobileSlider = ({slides}) => {
 
   return (
   <div className="mobile-slider-container">
-    <IoIosArrowForward />
-    <IoIosArrowBack />
+    <h1>Experience</h1>
+    <IoIosArrowForward className='slider-next-btn' onClick={nextSlide}/>
+    <IoIosArrowBack className='slider-prev-btn' onClick={prevSlide}/>
       {slides.map( (slide, index) => {
-        return <div className={index === current ? 'slider active': 'slide'}
+        return (<div className={index === current ? 'slider active': 'slider'}
                   key={index}>
-                  <img className ='mobile-slider-image' src={slide.imageSrc} alt={slide.company} />
-                  <h2>{slide.company}</h2>
-                  <h3>{slide.position}</h3>
-                  <p>{slide.description}</p>
-                  <button className="learn-more-btn">Learn More</button>
-               </div>;
-      })}
+                  {index === current && (
+                    <div className='mobile-exp-container'>
+                      <img className ='mobile-slider-image' src={slide.imageSrc} alt={slide.company} />
+                      <h2>{slide.company}</h2>
+                      <h3>{slide.position}</h3>
+                      <p>{slide.description}</p>
+                      <button className="learn-more-btn">Learn More</button>
+                    </div>
+                  )}
+               </div>
+               );
+          })}
   </div>
   )
 }
