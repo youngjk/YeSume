@@ -1,89 +1,38 @@
-import React from 'react';
+import React, {useState} from 'react';
+import {IoIosArrowForward, IoIosArrowBack} from 'react-icons/io';
+import './Mobile_slider_style.css';
 
-export const MobileSlider = () => {
+export const MobileSlider = ({slides}) => {
+  const [current, setCurrent] = useState(0);
+  const length = slides.length;
+  
+  const nextSlide = () =>{
+    setCurrent(current === length - 1 ? 0 : current + 1);
+  }
+
+  const prevSlide = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1);
+  }
+
+  // Check if the props is an array or have contents inside
+  if(!Array.isArray(slides) || length <= 0){
+    return null;
+  }
+
   return (
   <div className="mobile-slider-container">
-    {/* <h1>Experience</h1>  */}
-    {/* <AwesomeSlider
-      animation="foldOutAnimation"
-      className="mobile-slider"
-    >
-      <div className="mobile-slider-element">
-        <div className="img-con">
-          <img className="exp-img" src={"../../images/Verticalscope.png"}
-          alt="Vertical Scope" />
-        </div>
-        <h2>VerticalScope</h2>
-        <h3>Platform engineer</h3>
-        <p>
-          Large scale cloud infrastructure architecture 
-          and development. Exploring diverse fields of 
-          platform and centralizing a core infrastructure 
-          for all platforms on GCP.
-        </p>
-        <button className="learn-more-btn">Learn More</button>
-      </div>
-      <div className="mobile-slider-element">
-        <div className="img-con">
-          <img className="exp-img" src={"../../images/Universe.png"}
-          alt="Universe" />
-        </div>
-        <h2>Universe</h2>
-        <h3>Dev-ops Developer</h3>
-        <p>
-          Ownership over Platform and DevOps 
-          in Universe. Developed and maintained a 
-          modern cloud  infrastructure on GCP.
-        </p>
-        <button className="learn-more-btn">Learn More</button>
-      </div>
-      <div className="mobile-slider-element">
-        <div className="img-con">
-          <img className="exp-img" src={"../../images/Universe_FullStack.png"}
-          alt="Universe Full Stack" />
-        </div>
-        <h2>Universe</h2>
-        <h3>Full Stack Developer</h3>
-        <p>
-          Developed various features on a ticketing 
-          platform across the entire platform fully on 
-          end to end basis. Ranging from features 
-          such as ticket waitlists to add-ons purchases.
-        </p>
-        <button className="learn-more-btn">Learn More</button>
-      </div>
-      <div className="mobile-slider-element">
-        <div className="img-con">
-          <img className="exp-img" src={"../../images/Flybits.png"}
-          alt="Flybits" />
-        </div>
-        <h2>Flybits</h2>
-        <h3>Software Developer</h3>
-        <p>
-          Developed a dev portal site which 
-          contains the company’s core API dashboard 
-          and various information for developers 
-          around company’s core API.
-        </p>
-        <button className="learn-more-btn">Learn More</button>
-      </div>
-      <div className="mobile-slider-element">
-        <div className="img-con">
-          <img className="exp-img" src={"../../images/Klick.png"}
-          alt="Klick Inc" />
-        </div>
-        <h2>Klick Inc</h2>
-        <h3>Web Developer</h3>
-        <p>
-          Developed various pixel perfect client request 
-          basis web sites. These sites were fully responsive 
-          across multiple devices with beautiful custom 
-          designs. Exposure to extensive browser 
-          and os specific support for websites.
-        </p>
-        <button className="learn-more-btn">Learn More</button>
-      </div>
-    </AwesomeSlider> */}
+    <IoIosArrowForward />
+    <IoIosArrowBack />
+      {slides.map( (slide, index) => {
+        return <div className={index === current ? 'slider active': 'slide'}
+                  key={index}>
+                  <img className ='mobile-slider-image' src={slide.imageSrc} alt={slide.company} />
+                  <h2>{slide.company}</h2>
+                  <h3>{slide.position}</h3>
+                  <p>{slide.description}</p>
+                  <button className="learn-more-btn">Learn More</button>
+               </div>;
+      })}
   </div>
   )
 }

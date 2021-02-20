@@ -6,6 +6,7 @@ import { Experience } from '../components/Experience'
 import {Contact} from '../components/Contact'
 import './index.css'
 import { MobileSlider } from '../components/Mobile_slider'
+import {data} from '../static/data/ExperienceData'
 
 
 export default function Home() {
@@ -16,7 +17,7 @@ export default function Home() {
         <TitleImg />
       </div>
       <Experience />
-      <MobileSlider />
+      <MobileSlider slides={data}/>
       <Contact />
       <Footer />
     </div>
