@@ -1,52 +1,97 @@
 /* Mobile Slider Style Code */
-.mobile-slider-container{
+.mobile-slider-container {
   position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 500px;
-  padding: 20px 0 30px 0;
+  height: 680px;
+  margin: 30px 0;
 }
 
-.mobile-slider-container > h1{
+.mobile-slider-container > h1 {
   color: #0A0068;
   margin-bottom: 30px;
 }
 
-.mobile-exp-container{
+.mobile-exp-container {
   display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
+  flex-flow: column;
   align-items: center;
+  height: 600px;
 }
-.mobile-exp-container > p{
+.mobile-exp-container > p {
+  font-family: 'Poppins';
   text-align: center;
-  padding: 0 10px 20px 10px;
+  padding: 0 15px 20px 15px;
 }
 .mobile-exp-container > * {
   padding-bottom: 20px;
 }
-.slider-next-btn{
+
+.slider {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slider.active {
+  opacity: 1;
+  transition-duration: 0.3s;
+  transform: scale(1.02);
+}
+
+.dot {
+  display: inline-block;
+  background-color: #bbb;
+  margin: 0 3px;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+}
+
+.dot.active {
+  background-color: #0A0068;
+}
+
+.slider-next-btn {
   position: absolute;
-  top: 40%;
+  cursor: pointer;
+  user-select: none;
+  color: #000;
+  top: 38%;
   right: 0;
   font-size: 38px;
-  color: #000;
+  z-index: 2;
+  transition-duration: 0.5s;
+}
+
+.slider-next-btn:hover{
+  font-size: 40px;
+  right: -5px;
+}
+
+.slider-prev-btn {
+  position: absolute;
   cursor: pointer;
   user-select: none;
-}
-.slider-prev-btn{
-  position: absolute;
-  top: 40%;
+  color: #000;
+  top: 38%;
   left: 0;
   font-size: 38px;
-  color: #000;
-  cursor: pointer;
-  user-select: none;
+  z-index: 2;
+  transition-duration: 0.5s;
+}
+
+.slider-prev-btn:hover{
+  font-size: 40px;
+  left: -5px;
 }
 
 
-.mobile-slider-image{
-  width: 75%;
+.mobile-slider-image {
+  width: 230px;
+  height: 200px;
+}
+
+@media only screen and (min-width: 786px){
+  .mobile-slider-container {display: none;}
 }
