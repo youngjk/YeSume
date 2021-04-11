@@ -3,7 +3,7 @@ import './TitleImg_style.css'
 
 export const TitleImg = () => {
   return (
-    <div id ="container">
+    <div className="title-container">
       <div className="landing-main">
         <div className="main-heading">
           <h2>
@@ -18,10 +18,6 @@ export const TitleImg = () => {
           <h3>
           Based in Toronto, Canada
           </h3>
-        </div>
-        <div className="main-img-container">
-          <img className="main-img" src={"images/LandingPage.png"}
-          alt="Planet"/>
         </div>
         <div className="hidden-heading">
         <h1>

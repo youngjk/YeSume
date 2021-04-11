@@ -1,0 +1,75 @@
+.linkedin-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.linkedin-container * {
+  font-family: 'Poppins';
+}
+.profile-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.profile-main > p {
+  text-align: center;
+  letter-spacing: 1.5px;
+  line-height: 30px;
+  padding: 20px 50px;
+}
+
+.company-container {
+  position: absolute;
+  display: flex;
+  flex-flow: row;
+}
+
+.company-background{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background */
+  background-image: url('../static/backgrounds/CareerBackground.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 800px;
+  width: 100%;
+}
+
+.company-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 250px;
+  height: 500px;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid #000;
+  border-radius: 25px;
+  background-color: #fff;
+}
+
+.company-details p {
+  text-align: center;
+}
+
+.education-container {
+  text-align: center;
+  margin: 40px;
+}
+
+.skills {
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 25px;
+  width: 60%;
+  padding: 30px;
+  margin-bottom: 40px;
+}

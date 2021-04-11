@@ -8,11 +8,29 @@
 
 .title-background {
   background-image: url('../static/backgrounds/LandingBackground.png');
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.career-title-background {
+  background-image: url('../static/backgrounds/CareerBackground.png');
   background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 800px;
+  overflow-x: hidden;
 }
 
 .background{
   background-color: #0B0668;
+}
+
+.career-page *{
+  color: #000;
+}
+
+@media only screen and (max-width: 767px) {
+  .title-background {
+    background-position: 55%;
+  }
 }

@@ -1,0 +1,35 @@
+.career-slider-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 800px;
+}
+
+.career-slider-image {
+  height: 500px;
+  width: 300px;
+  margin: 0 50px
+}
+
+.animate {
+  animation: marquee 10s linear infinite;
+}
+
+.animate:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% {
+    -moz-transform: translateX(1.5%);
+    -webkit-transform: translateX(1.5%);
+    transform: translateX(1.5%)
+  }
+  100% {
+    -moz-transform: translateX(-122.5);
+    -webkit-transform: translateX(-122.5%);
+    transform: translateX(-122.5%);
+  }
+}
