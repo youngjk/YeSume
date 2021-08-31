@@ -17,20 +17,155 @@
   background-image: url('../static/backgrounds/CareerBackground.png');
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 800px;
+  background-attachment: fixed;
+  min-height: 1000px;
   overflow-x: hidden;
+}
+
+.none-filter-wrapper{
+  height: 100%;
+  padding-bottom: 5%;
 }
 
 .background{
   background-color: #0B0668;
 }
 
-.career-page *{
-  color: #000;
+.career-heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 900px;
 }
 
+.modal-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-bottom: 0;
+}
+.info-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  padding: 16px 32px;
+  margin: 0 40px;
+  height: 300px;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+.career-heading h1 {
+  color:#fff;
+  font-size: 120px;
+  margin: 250px 0 0 700px;
+}
+
+.social-network-container{
+  display: flex;
+  max-width: 1440px;
+  margin: 200px auto;
+  justify-content: space-between;
+}
+
+.vision-container{
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  margin: 100px auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.vision-container > h1{
+  color: #fff;
+  margin-bottom: 120px;
+  font-size: 48px;
+  letter-spacing: 3px;
+}
+
+.vision-img-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.vision-img-wrapper > img{
+  margin: 5px;
+  width: 500px;
+  height: 500px;
+}
+
+#mobile-touch-slider{
+  display: flex;
+  flex-direction: row;
+  width: 425px;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+}
+.mobile-career-container{
+  display: none;
+}
 @media only screen and (max-width: 767px) {
   .title-background {
     background-position: 55%;
+  }
+  .career-title-background{
+    background-image: url('../static/backgrounds/CareerBackgroundMobile.png');
+  }
+  .career-heading h1{
+    display: none;
+  }
+  .career-heading{
+    height: 400px;
+  }
+  .modal-container{
+    display: none;
+  }
+  .social-network-container{
+    display: none;
+  }
+  .vision-container{
+    width: 80%;
+  }
+  .vision-container > h1{
+    margin-bottom: 50px;
+    font-size: 32px;
+    letter-spacing: 3px;
+  }
+  .vision-img-wrapper > img{
+    margin: 5px;
+    width: 50%;
+    height: 50%;
+  }
+  .mobile-career-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .modal-container-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    margin-bottom: 0;
+  }
+  .info-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 5px;
+    margin: 0 1px;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
   }
 }

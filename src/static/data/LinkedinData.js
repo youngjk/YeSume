@@ -5,7 +5,7 @@ export const profileData = {
     "location": "Waterloo, Ontario, Canada",
     "connections": "242 connections",
     "imageurl": "https://media-exp1.licdn.com/dms/image/C5603AQGiIm7oWFiDbw/profile-displayphoto-shrink_200_200/0/1589316424733?e=1619049600&v=beta&t=mQ2NR9Sw84n9hopV9Bmg-vKU94UFC8aGYfHh0Nly86Q",
-    "summary": "Engineer | Developer | Learner | Explorer | Social | Investor\n\nI've started out my life as an athlete, shifted to an academic student, entered the realm of software development, and currently I'm exploring the vast world of Platform and Infrastructures.\n\nI have learned much in all the realms of the web ranging from working closely with designers on front-end to create pixel perfect sites to working closely with back-end developers to create a stable and efficient core logic and queries.\n\nI now expand further to explore the realms of platform and dev-ops.\n\nCareer map:\n=> Sharepoint developer\n=> Front-end developer\n=> Web application developer\n=> Full-stack developer\n=> Platform developer | DevOps developer"
+    "summary": "Engineer | Developer | Learner | Explorer | Social | Investor"
   },
   "about": {
     "text": "Engineer | Developer | Learner | Explorer | Social | Investor\n\nI've started out my life as an athlete, shifted to an academic student, entered the realm of software development, and currently I'm exploring the vast world of Platform and Infrastructures.\n\nI have learned much in all the realms of the web ranging from working closely with designers on front-end to create pixel perfect sites to working closely with back-end developers to create a stable and efficient core logic and queries.\n\nI now expand further to explore the realms of platform and dev-ops.\n\nCareer map:\n=> Sharepoint developer\n=> Front-end developer\n=> Web application developer\n=> Full-stack developer\n=> Platform developer | DevOps developer"
@@ -19,7 +19,8 @@ export const profileData = {
       "location": "Toronto, Ontario, Canada",
       "description": "- Took ownership over company monitoring and alerting infrastructure via prometheus stack for kubernetes clusters housing 1000+ sites\n- Analyzed and optimized resource utilization across 1000+ sites on GCE VMs and K8S deployments through database consolidations and resource reconfigurations\n- Conducted full infrastructure migration from IBM bare metal servers to GCP provided services (cloudsql & memorystore) and compute engine using terraform and ansible\n- Conducted various DNS managment and zone migrations across various services such as Cloud DNS (GCP), Cloudflare DNS, and Uniregistry\n- Managed full SSL management from client to edge to servers for 500+ sites via Cloudflare SSL & cert-manager in GCP\nsee less",
       "date1": "May 2020 – Present",
-      "date2": "10 mos"
+      "date2": "10 mos",
+      "imageSrc": "images/verticalscope-career.png"
     },
     {
       "title": "Universe",

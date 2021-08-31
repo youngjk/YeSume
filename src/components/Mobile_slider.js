@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {IoIosArrowForward, IoIosArrowBack} from 'react-icons/io';
-import './Mobile_slider_style.css';
+import '../CSS/Mobile_slider_style.css';
 
 export const MobileSlider = ({slides}) => {
   const [current, setCurrent] = useState(0);

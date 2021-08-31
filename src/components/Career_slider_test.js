@@ -1,5 +1,5 @@
 import React,{useState, useEffect} from 'react'
-import './Career_slider_test.css'
+import '../CSS/Career_slider_test.css';
 
 export const CareerSliderTest = ({images}) => {
   return (

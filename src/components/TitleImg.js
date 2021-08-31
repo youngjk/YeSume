@@ -1,5 +1,5 @@
 import React from 'react'
-import './TitleImg_style.css'
+import '../CSS/TitleImg_style.css'
 
 export const TitleImg = () => {
   return (
