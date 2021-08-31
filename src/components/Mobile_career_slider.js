@@ -48,6 +48,7 @@ export default function MobileCareerSlider() {
     <div id={"mobile-touch-slider"} onPointerDown={gestureStart} onPointerMove={gestureMove} onPointerUp={gestureEnd} ref={node => slider.current = node} style={{width:"100%"}}>
       {data.map((company, index) => {
         let halfImgCon = imgContainerWidth/2;
+        // Axis is the value calculate to ratio the image depends on how much the slider had been moved
         let axis = (imgPostionList[index] ? imgPostionList[index].x + halfImgCon > (containerWidth/1.75) ? ((containerWidth/1.75) - ((imgPostionList[index].x + halfImgCon)- (containerWidth/1.75))) / (containerWidth/1.75) : (imgPostionList[index].x + halfImgCon)/ (containerWidth/1.75) : 1) * 100;
         return (
           <div className='info-container'>

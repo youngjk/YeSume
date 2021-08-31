@@ -6,14 +6,17 @@ export const MobileSlider = ({slides}) => {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
   
+  // moves current index to next index
   const nextSlide = () => {
-    setCurrent(current === length - 1 ? 0 : current + 1);
+    setCurrent(current === length - 1 ? 0 : current + 1); // if current index is last element then set it back to 0
   }
 
   const prevSlide = () => {
-    setCurrent(current === 0 ? length - 1 : current - 1);
+    setCurrent(current === 0 ? length - 1 : current - 1); // if current index is first element then set it to last index
   }
 
+  // create the dots below the slider 
+  // indicates which element the client is viewing
   const createDot = (sliderLength, current) => {
     const dot = [];
     for(let i = 0; i < sliderLength; i ++){

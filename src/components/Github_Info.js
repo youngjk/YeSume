@@ -117,6 +117,8 @@ export const GithubInfo = () => {
   const [current, setCurrent] = useState("Repo");
   const [commitData , setCommitData] = useState([]);
   const [commitIsLoading, setCommitIsLoading] = useState(true);
+
+  // getCommitData sorts out the pushEvent(Commits) from github public event API data
   const getCommitData = (commitResponse) => {
     let dataList = [];
     for(let i = 0; i < commitResponse.length; i ++){
@@ -128,14 +130,16 @@ export const GithubInfo = () => {
     setCommitIsLoading(false);
   }
 
+  // Toggles the view
   const onClick = (event) => {
     if(event.target.name !== current){
       setSwitchDisplay(prev => !prev)
     }
     setCurrent(event.target.name);
   }
+
   useEffect(()=>{
-    isLoading ? refetch2() : response ?? getCommitData(response);
+    isLoading ? refetch2() : response ?? getCommitData(response); // if API is loading still loading refetch, else if the reponse exists then sort the data using getCommitData
   },[])
   return (
     <InfoWrapper>
