@@ -1,16 +1,19 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import '../CSS/Footer_style.css'
+import React from "react";
+import { Link } from "react-router-dom";
+import "../CSS/Footer_style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedinIn, faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import {
+  faLinkedinIn,
+  faFacebookF,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 
 export const Footer = () => {
   return (
     <div className="background">
       <footer>
         {/* Mock-up logo */}
-        <img className="mock-logo" src="images/mock-logo.png"
-          alt="mock-logo" />
+        <img className="logo" src="images/logo.png" alt="mock-logo" />
         <div className="footer-wrap">
           <div>
             <h3>Pages</h3>
@@ -70,5 +73,5 @@ export const Footer = () => {
         <Link to="/contact">Contact</Link>
       </div>
     </div>
-  )
-}
+  );
+};

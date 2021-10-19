@@ -19,6 +19,14 @@ footer h3 {
   font-size: 24px;
 }
 
+.logo {
+  /* center the logo */
+  display: flex;
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+}
+
 .footer-wrap{
   display: flex;
   flex-flow: row;
@@ -72,7 +80,7 @@ footer span {
 /* Small devices style code 
 portrait tablets and large phones, 767px and down) */
 @media only screen and (max-width: 767px) {
-  footer .mock-logo {
+  footer .logo {
     display: none;
   }
 
