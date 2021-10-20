@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import {profileData} from '../static/data/LinkedinData';
+import React from "react";
+import styled from "styled-components";
+import { profileData } from "../static/data/LinkedinData";
 
 const MobileCareerInfo = styled.div`
   display: flex;
@@ -8,11 +8,11 @@ const MobileCareerInfo = styled.div`
   justify-content: center;
   align-items: center;
   width: 80%;
-  h2{
+  h2 {
     color: #fff;
     margin: 20px 0;
   }
-  .info-title{
+  .info-title {
     display: flex;
     flex-direction: column;
     color: #fff;
@@ -21,22 +21,23 @@ const MobileCareerInfo = styled.div`
     border-bottom: 2px solid #fff;
     padding: 30px 20px;
     margin: 35px 0;
-    div{
+    div {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      p{
+      p {
         font-size: 10px;
         margin: 10px 0 30px 0;
       }
-      div{
+      div {
         display: flex;
         flex-direction: column;
         width: 40%;
         height: 100%;
       }
     }
-    p, h3{
+    p,
+    h3 {
       font-family: "Poppins";
       margin: 10px 0;
     }
@@ -63,11 +64,11 @@ const Button = styled.button`
   padding: 12px 60px;
 `;
 
-const TP_Button = styled.button`
+const TPbutton = styled.button`
   padding: 7px 40px;
   background-color: transparent;
   width: 100%;
-  border: 3px solid #4741F1;
+  border: 3px solid #4741f1;
   color: #fff;
   font-family: "Poppins";
   cursor: pointer;
@@ -77,35 +78,35 @@ const AboutWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #D5D5D5;
+  color: #d5d5d5;
   p {
     font-size: 10px;
     margin-bottom: 15px;
   }
-  h3{
-    color: #D5D5D5;
+  h3 {
+    color: #d5d5d5;
     font-family: "Poppins";
     margin-bottom: 15px;
   }
-  div{
+  div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #D5D5D5;
-    h4{
+    color: #d5d5d5;
+    h4 {
       margin-bottom: 15px;
     }
   }
 `;
 
 function CareerMobileInfo() {
-  // Functions require here 
+  // Functions require here
   // - API request to Github & Linkedin
   // - Function handles toggle event
   return (
     <MobileCareerInfo>
-      <img src={"images/youngjin_mobile_profile.png"} alt={"profile picture"} />
+      <img src={"images/youngjin_mobile_profile.png"} alt={"profile"} />
       <h2>YOUNGJIN KIM</h2>
       <ButtonContainer>
         <Button>LINKEDIN</Button>
@@ -116,11 +117,11 @@ function CareerMobileInfo() {
         <div>
           <div>
             <p>Waterloo, Ontario, Canada</p>
-            <TP_Button>CONNECT</TP_Button>
+            <TPbutton>CONNECT</TPbutton>
           </div>
           <div>
             <p>242 connection</p>
-            <TP_Button>MESSAGE</TP_Button>
+            <TPbutton>MESSAGE</TPbutton>
           </div>
         </div>
       </div>
@@ -136,12 +137,15 @@ function CareerMobileInfo() {
         </div>
         <div>
           <h4>Investment Sector</h4>
-          <p>Cloud | 5G | Financial | Renewable Energy | Plant Based Diet | IoT | VR/AR</p>
+          <p>
+            Cloud | 5G | Financial | Renewable Energy | Plant Based Diet | IoT |
+            VR/AR
+          </p>
         </div>
         <p>Feel free to reach out as I love talking about any of the above!</p>
       </AboutWrapper>
     </MobileCareerInfo>
-  )
+  );
 }
 
-export default CareerMobileInfo
+export default CareerMobileInfo;

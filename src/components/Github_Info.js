@@ -110,10 +110,10 @@ const Button = styled.button`
 `;
 
 export const GithubInfo = () => {
-  const [{ data, loading, error }, refetch] = useAxios(
+  const [{ data, loading }] = useAxios(
     "https://api.github.com/users/youngjk/repos"
   );
-  const [{ response, isLoading, error2 }, refetch2] = useAxios(
+  const [{ response, isLoading }, refetch2] = useAxios(
     "https://api.github.com/users/youngjk/events/public"
   );
   const [switchDisplay, setSwitchDisplay] = useState(false);
@@ -143,16 +143,18 @@ export const GithubInfo = () => {
 
   useEffect(() => {
     isLoading ? refetch2() : response && getCommitData(response); // if API is loading still loading refetch, else if the reponse exists then sort the data using getCommitData
-  }, []);
+  }, [isLoading, response, refetch2]);
   return (
     <InfoWrapper>
       <img
         src={"/images/GitLogo.png"}
+        alt={"github logo"}
         style={{ width: "100px", marginBottom: "60px" }}
       />
       <ProfileWrapper>
         <img
           src={"/images/profilePic.jpeg"}
+          alt={"profile"}
           style={{
             width: "100px",
             height: "100px",
@@ -205,6 +207,7 @@ export const GithubInfo = () => {
                       <a
                         href={`https://github.com/${commit.repo.name}`}
                         target="_blank"
+                        rel="noreferrer"
                       >
                         {commit.repo.name.replace("youngjk/", "")}
                       </a>
@@ -221,7 +224,11 @@ export const GithubInfo = () => {
               data.map((repo, index) => {
                 return (
                   <RepoList key={`indexAt${index}`}>
-                    <a href={`${repo.html_url}`} target="_blank">
+                    <a
+                      href={`${repo.html_url}`}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       {repo.name}
                     </a>
                     <ul>

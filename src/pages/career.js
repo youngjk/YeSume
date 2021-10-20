@@ -104,7 +104,7 @@ export default function Career() {
                       data-index={index}
                     />
                   </div>
-                  {index == current && (
+                  {index === current && (
                     <Modal
                       showModal={showModal}
                       setShowModal={setShowModal}

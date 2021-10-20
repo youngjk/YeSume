@@ -99,7 +99,7 @@ const TitleContainer = styled.div`
   }
 `;
 
-const Info_Container = styled.div`
+const InfoContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -137,7 +137,7 @@ const Info_Container = styled.div`
   }
 `;
 
-const Sector_Grid = styled.div`
+const SectorGrid = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -157,7 +157,7 @@ const Sector_Grid = styled.div`
   }
 `;
 
-const Post_Container = styled.div`
+const PostContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -227,20 +227,20 @@ function Finance() {
             Lorem Ipsum is simply dummy text of the printing and typesetting
           </p>
         </TitleContainer>
-        <Info_Container>
+        <InfoContainer>
           <h1>SECTOR</h1>
-          <Sector_Grid>
+          <SectorGrid>
             <div>ENERGY</div>
             <div>TECH</div>
             <div>FOOD</div>
             <div>FASHION</div>
-          </Sector_Grid>
-        </Info_Container>
-        <Info_Container>
+          </SectorGrid>
+        </InfoContainer>
+        <InfoContainer>
           <h1>RECENT POST</h1>
-          <Post_Container>
+          <PostContainer>
             <Post>
-              <img src={"images/finance/mock-chart.png"} />
+              <img src={"images/finance/mock-chart.png"} alt="mock-chart" />
               <div>
                 <h2>Li-Cycle Holdings Corp (LICY)</h2>
                 <p>
@@ -251,7 +251,7 @@ function Finance() {
               </div>
             </Post>
             <Post>
-              <img src={"images/finance/mock-chart.png"} />
+              <img src={"images/finance/mock-chart.png"} alt="mock-chart" />
               <div>
                 <h2>Peak Fintech Group (PKKFF)</h2>
                 <p>
@@ -261,9 +261,9 @@ function Finance() {
                 <p>Post Description</p>
               </div>
             </Post>
-          </Post_Container>
+          </PostContainer>
           <FinanceModal />
-        </Info_Container>
+        </InfoContainer>
       </MainContainer>
       <Footer />
     </>
