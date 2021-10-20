@@ -1,11 +1,14 @@
 import React from "react";
 import styled from "styled-components";
+import { FaTimes } from "react-icons/fa";
 
 const ModalContainer = styled.div`
   display: flex;
   justify-content: center;
+  position: relative;
   height: 1650px;
   border-radius: 25px;
+  margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.5);
   width: 80%;
   border: 1px solid #1ecc8c;
@@ -89,9 +92,21 @@ const MorePosts = styled.div`
   }
 `;
 
+const CloseButton = styled(FaTimes)`
+  position: absolute;
+  cursor: pointer;
+  font-size: 32px;
+  top: 30px;
+  right: 30px;
+  :hover {
+    color: #8459f9;
+  }
+`;
+
 function FinanceModal({ display, onClose }) {
-  return (
+  return display ? (
     <ModalContainer>
+      <CloseButton onClick={onClose} />
       <ModalWrapper>
         <Header>
           <span className="highlight">TECH - 5G</span>
@@ -141,7 +156,7 @@ function FinanceModal({ display, onClose }) {
         </MorePosts>
       </ModalWrapper>
     </ModalContainer>
-  );
+  ) : null;
 }
 
 export default FinanceModal;

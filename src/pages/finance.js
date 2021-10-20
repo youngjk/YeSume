@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styled, { css } from "styled-components";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
@@ -15,6 +15,11 @@ const MainContainer = styled.div`
   height: 3500px;
   width: 100%;
   scroll-behavior: smooth;
+  > .toggle-div {
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+  }
 `;
 
 const CoinContainer = styled.div`
@@ -169,6 +174,7 @@ const Post = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  cursor: pointer;
   color: #d5d5d5;
   width: 60%;
   margin-bottom: 75px;
@@ -198,9 +204,19 @@ const Post = styled.div`
 
 function Finance() {
   const [positionY, setPositionY] = useState(0);
+  const [display, setDisplay] = useState(false);
+  const toggleDiv = useRef();
 
   const onScroll = () => {
     setPositionY(window.scrollY);
+  };
+  const onClose = () => {
+    setDisplay((prev) => !prev);
+    toggleDiv.current.style.display = "flex";
+  };
+  const onPostClick = () => {
+    setDisplay(true);
+    toggleDiv.current.style.display = "none";
   };
 
   useEffect(() => {
@@ -227,43 +243,45 @@ function Finance() {
             Lorem Ipsum is simply dummy text of the printing and typesetting
           </p>
         </TitleContainer>
-        <InfoContainer>
-          <h1>SECTOR</h1>
-          <SectorGrid>
-            <div>ENERGY</div>
-            <div>TECH</div>
-            <div>FOOD</div>
-            <div>FASHION</div>
-          </SectorGrid>
-        </InfoContainer>
-        <InfoContainer>
-          <h1>RECENT POST</h1>
-          <PostContainer>
-            <Post>
-              <img src={"images/finance/mock-chart.png"} alt="mock-chart" />
-              <div>
-                <h2>Li-Cycle Holdings Corp (LICY)</h2>
-                <p>
-                  11.56 <span>+0.41 (+3.68%)</span>
-                </p>
-                <h3>Post Header</h3>
-                <p>Post Description</p>
-              </div>
-            </Post>
-            <Post>
-              <img src={"images/finance/mock-chart.png"} alt="mock-chart" />
-              <div>
-                <h2>Peak Fintech Group (PKKFF)</h2>
-                <p>
-                  8.35 <span>+0.42 (+5.30%)</span>
-                </p>
-                <h3>Post Header</h3>
-                <p>Post Description</p>
-              </div>
-            </Post>
-          </PostContainer>
-          <FinanceModal />
-        </InfoContainer>
+        <div ref={toggleDiv} className="toggle-div">
+          <InfoContainer>
+            <h1>SECTOR</h1>
+            <SectorGrid>
+              <div>ENERGY</div>
+              <div>TECH</div>
+              <div>FOOD</div>
+              <div>FASHION</div>
+            </SectorGrid>
+          </InfoContainer>
+          <InfoContainer>
+            <h1>RECENT POST</h1>
+            <PostContainer>
+              <Post onClick={onPostClick}>
+                <img src={"images/finance/mock-chart.png"} alt="mock-chart" />
+                <div>
+                  <h2>Li-Cycle Holdings Corp (LICY)</h2>
+                  <p>
+                    11.56 <span>+0.41 (+3.68%)</span>
+                  </p>
+                  <h3>Post Header</h3>
+                  <p>Post Description</p>
+                </div>
+              </Post>
+              <Post onClick={onPostClick}>
+                <img src={"images/finance/mock-chart.png"} alt="mock-chart" />
+                <div>
+                  <h2>Peak Fintech Group (PKKFF)</h2>
+                  <p>
+                    8.35 <span>+0.42 (+5.30%)</span>
+                  </p>
+                  <h3>Post Header</h3>
+                  <p>Post Description</p>
+                </div>
+              </Post>
+            </PostContainer>
+          </InfoContainer>
+        </div>
+        <FinanceModal display={display} onClose={onClose} />
       </MainContainer>
       <Footer />
     </>
