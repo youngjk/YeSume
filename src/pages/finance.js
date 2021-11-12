@@ -159,6 +159,47 @@ const SectorGrid = styled.div`
     height: 100%;
     width: 23%;
     margin: 0 2px;
+    h3 {
+      display: flex;
+      visibility: visible;
+      opacity: 1;
+      transition: visibility 0s, opacity 1s linear, width 1s, height 1s;
+    }
+    .splitter {
+      display: flex;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity 1s linear, width 1s, height 1s;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 0;
+      width: 0;
+      div {
+        border: 1px solid #d5d5d5;
+        margin: 10px 5px;
+        width: 95%;
+        flex: 1;
+        transition: 1s;
+        :hover {
+          flex: 3;
+        }
+      }
+    }
+    :hover {
+      h3 {
+        visibility: hidden;
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+      .splitter {
+        visibility: visible;
+        opacity: 1;
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
 `;
 
@@ -247,10 +288,46 @@ function Finance() {
           <InfoContainer>
             <h1>SECTOR</h1>
             <SectorGrid>
-              <div>ENERGY</div>
-              <div>TECH</div>
-              <div>FOOD</div>
-              <div>FASHION</div>
+              <div>
+                <h3>ENERGY</h3>
+                <div className="splitter">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+              <div>
+                <h3>TECH</h3>
+                <div className="splitter">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+              <div>
+                <h3>FOOD</h3>
+                <div className="splitter">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+              <div>
+                <h3>FASHION</h3>
+                <div className="splitter">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
             </SectorGrid>
           </InfoContainer>
           <InfoContainer>
