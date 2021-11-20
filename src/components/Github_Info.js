@@ -207,7 +207,7 @@ export const GithubInfo = () => {
                       <a
                         href={`https://github.com/${commit.repo.name}`}
                         target="_blank"
-                        rel="noreferrer"
+                        rel="noopener noreferrer"
                       >
                         {commit.repo.name.replace("youngjk/", "")}
                       </a>
@@ -227,7 +227,7 @@ export const GithubInfo = () => {
                     <a
                       href={`${repo.html_url}`}
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                     >
                       {repo.name}
                     </a>
