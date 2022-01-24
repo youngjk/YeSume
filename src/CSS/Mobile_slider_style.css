@@ -1,0 +1,105 @@
+/* Mobile Slider Style Code */
+.mobile-slider-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 680px;
+  margin: 30px 0 0 0;
+}
+
+.mobile-slider-container > h1 {
+  color: #0A0068;
+  margin-bottom: 30px;
+}
+
+.mobile-exp-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  height: 600px;
+  width: 100%;
+}
+.mobile-exp-container > p {
+  font-family: 'Poppins';
+  text-align: center;
+  height: 180px;
+  padding: 0 15px 20px 15px;
+}
+.mobile-exp-container > h3 {
+  font-family: 'Poppins';
+  font-size: 16px;
+  color: #5863EF;
+}
+.mobile-exp-container > * {
+  padding-bottom: 20px;
+}
+
+.slider {
+  opacity: 0;
+  
+  transition-duration: 1s ease;
+}
+
+.slider.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.00);
+}
+
+.dot {
+  display: inline-block;
+  background-color: #bbb;
+  margin: 0 3px;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+}
+
+.dot.active {
+  background-color: #0A0068;
+}
+
+.slider-next-btn {
+  position: absolute;
+  cursor: pointer;
+  user-select: none;
+  color: #000;
+  top: 38%;
+  right: 0;
+  font-size: 38px;
+  z-index: 2;
+  transition-duration: 0.5s;
+}
+
+.slider-next-btn:hover{
+  font-size: 40px;
+  right: -3px;
+}
+
+.slider-prev-btn {
+  position: absolute;
+  cursor: pointer;
+  user-select: none;
+  color: #000;
+  top: 38%;
+  left: 0;
+  font-size: 38px;
+  z-index: 2;
+  transition-duration: 0.5s;
+}
+
+.slider-prev-btn:hover{
+  font-size: 40px;
+  left: -3px;
+}
+
+
+.mobile-slider-image {
+  width: 230px;
+  height: 200px;
+}
+
+@media only screen and (min-width: 786px){
+  .mobile-slider-container {display: none;}
+}

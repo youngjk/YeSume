@@ -1,0 +1,107 @@
+/* Landing Page Main Section Style Code */
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 700px;
+}
+
+.landing-main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 0 100px;
+  max-width: 1440px;
+}
+
+/* Heading Container Style Code */
+.main-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hidden-heading{
+  display: none;
+}
+
+/* Image Container Style Code */
+.main-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.main-img {
+  width: 100%;
+  min-width: 300px;
+}
+
+/* Text Style Code */
+.landing-main h1 {
+  font-size: clamp(42px,100px,4vw);
+  margin: 10px 0;
+}
+
+.landing-main h2 {
+  color: #ffffff;
+  font-size: clamp(18px,32px,3vw);
+  font-weight: 500;
+  margin: 0 0 20px 0;
+}
+
+.landing-main h3 {
+  font-size: clamp(12px,24px, 2vw);
+  font-weight: 500;
+  margin: 20px 0 0 3px;
+}
+
+.landing-main h1,
+.landing-main h3 {
+  color: #ffffff;
+}
+
+/* Small devices style code 
+portrait tablets and large phones, 767px and down) */
+@media only screen and (max-width: 767px) {
+  .title-container{
+    min-height: 350px;
+  }
+  .landing-main{
+    padding: 0;
+    flex-flow: column;
+  }
+  .main-heading h1,
+  .main-heading h3 {
+    display: none;
+  }
+
+  .main-heading h2 {
+    margin: 15px 0;
+    text-align: center;
+  }
+  
+  .main-heading {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .hidden-heading {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hidden-heading h1 {
+    margin: 0;
+  }
+
+  .hidden-heading h3 {
+    margin: 15px 0;
+  }
+}

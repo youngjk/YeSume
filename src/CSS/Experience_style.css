@@ -1,0 +1,96 @@
+/* Outter Container Style Code */
+.experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  max-width: 1440px;
+}
+
+/* Images and Image Container Style Code */
+.exp-img {
+  max-width: 100%;
+  min-width: 300px;
+}
+
+.img-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Inner Container Style Code */
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 20px 100px;
+}
+
+#reverse.container{
+  flex-wrap: wrap-reverse;
+}
+
+.container:last-child {
+  margin-bottom: 100px;
+}
+
+/* Text Container Style Code */
+.container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  padding: 40px;
+}
+
+/* Text Style Code */
+.experience h1 {
+  color: #0A0068;
+  font-size: min(48px, 5vw);
+  padding: 80px 0 50px 0;
+}
+
+.experience h2 {
+  color: #0A0068;
+  font-size: max(32px, 2vw);
+  font-weight: 900;
+  margin: 0 0 30px 0;
+}
+
+.experience h3 {
+  color: #5863EF;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.experience p {
+  font-family: 'Poppins';
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+#text-right {
+  text-align: right;
+  align-items: flex-end;
+}
+
+/* Button Style Code */
+button.learn-more-btn {
+  background-color: #0A0068;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  width: 120px;
+}
+
+@media only screen and (max-width: 768px) {
+  #text-right{
+    text-align: left;
+    align-items: flex-start;
+  }
+  .experience{
+    display: none;
+  }
+}

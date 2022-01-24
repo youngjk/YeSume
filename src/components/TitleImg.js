@@ -1,9 +1,9 @@
 import React from 'react'
-import './TitleImg_style.css'
+import '../CSS/TitleImg_style.css'
 
 export const TitleImg = () => {
   return (
-    <div id ="container">
+    <div className="title-container">
       <div className="landing-main">
         <div className="main-heading">
           <h2>
@@ -19,9 +19,16 @@ export const TitleImg = () => {
           Based in Toronto, Canada
           </h3>
         </div>
-        <div className="main-img-container">
-          <img className="main-img" src={"../../images/LandingPage.png"}
-          alt="Planet"/>
+        <div className="hidden-heading">
+        <h1>
+            PLATFORM
+          </h1>
+          <h1>
+            ENGINEER
+          </h1>
+          <h3>
+          Based in Toronto, Canada
+          </h3>
         </div>
       </div>
     </div>
